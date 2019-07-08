@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 08, 2019 at 10:21 PM
+-- Generation Time: Jul 08, 2019 at 10:25 PM
 -- Server version: 5.7.26-0ubuntu0.18.04.1
 -- PHP Version: 7.2.19-0ubuntu0.18.04.1
 
@@ -19,6 +19,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `mockUp_Tokped`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kategori`
+--
+
+CREATE TABLE `kategori` (
+  `id_kategori` int(11) NOT NULL,
+  `nama_kategori` varchar(111) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
+(1, 'elektronik'),
+(2, 'ibu dan bayi'),
+(3, 'otomotif'),
+(4, 'olahraga'),
+(5, 'furniture');
 
 -- --------------------------------------------------------
 
@@ -54,9 +76,41 @@ INSERT INTO `produk` (`id_produk`, `id_kategory`, `id_penjual`, `nama_produk`, `
 (15, 5, 1, 'LEMARI IKEA', 567654, 'ukuran 14x15', 'https://ecs7.tokopedia.net/img/cache/700/product-1/2019/1/11/4482427/4482427_016a1e90-1f8b-494b-beb9-2789890347af_700_700.jpg', '2019-07-08 17:00:00.000000', '2019-07-09 17:00:00.000000'),
 (16, 5, 1, 'KASUR RUSAK', 998990, 'kasur mantab muat untuk treesome', 'https://ecs7.tokopedia.net/img/product-1/2017/5/26/184809604/184809604_d0d1782e-f6a0-44e1-b808-f5eae5be4f8f_1024_755.jpg', '2019-07-08 17:00:00.000000', '2019-07-10 17:00:00.000000');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id_user` int(11) NOT NULL,
+  `nama` varchar(111) NOT NULL,
+  `telpon` int(15) NOT NULL,
+  `email` varchar(21) NOT NULL,
+  `rating` int(2) NOT NULL,
+  `lokasi` varchar(111) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_user`, `nama`, `telpon`, `email`, `rating`, `lokasi`) VALUES
+(1, 'mang jaja si penjual furniture', 987654321, 'jaja@miharja.com', 1231231, ''),
+(2, 'bu siti si penjual alat bayi', 123456789, 'siti@markonah.com', 0, ''),
+(3, 'alexander parto si penjual otomotif', 696969696, 'alex@parto.com', 0, ''),
+(4, 'bu kayn si penjual alat olahraga', 123123123, 'tolong@bukain.com', 0, ''),
+(5, 'koh lim si penjual elektronik', 657474627, 'koh@lim.com', 0, '');
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `kategori`
+--
+ALTER TABLE `kategori`
+  ADD PRIMARY KEY (`id_kategori`);
 
 --
 -- Indexes for table `produk`
@@ -65,14 +119,30 @@ ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id_user`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `kategori`
+--
+ALTER TABLE `kategori`
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
   MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
