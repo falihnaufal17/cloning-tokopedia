@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "toped-kwsuper",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,15 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.0"
+=======
+  "name": "toko-pedia-clone",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+>>>>>>> 34e5af5d8bd0be01c576a5fe4edc570ed5729ed4
   },
   "scripts": {
     "start": "react-scripts start",
