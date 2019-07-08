@@ -1,0 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6deb5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jul 08, 2019 at 10:21 PM
+-- Server version: 5.7.26-0ubuntu0.18.04.1
+-- PHP Version: 7.2.19-0ubuntu0.18.04.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `mockUp_Tokped`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `produk`
+--
+
+CREATE TABLE `produk` (
+  `id_produk` int(11) NOT NULL,
+  `id_kategory` int(11) NOT NULL,
+  `id_penjual` int(11) NOT NULL,
+  `nama_produk` varchar(111) NOT NULL,
+  `harga` int(50) NOT NULL,
+  `deskripsi` varchar(111) NOT NULL,
+  `foto` text NOT NULL,
+  `created_at` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
+  `updated_at` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`id_produk`, `id_kategory`, `id_penjual`, `nama_produk`, `harga`, `deskripsi`, `foto`, `created_at`, `updated_at`) VALUES
+(1, 1, 5, 'SENTER AJAIB PEMBESAR APA SAJA', 1200100, 'barang ini bagus bisa membesarkan rumah ', 'https://cdn.idntimes.com/content-images/post/20161208/5-35b6343f68c36d03c2495f7c84e1dede.jpg', '2019-07-15 17:00:00.000000', '2019-07-30 17:00:00.000000'),
+(2, 1, 5, 'JET PACK GTA SA', 90900900, 'barang ini bisa membuat mu terbang melayang', 'http://1.bp.blogspot.com/-K02ax-jdvIQ/TmLiCTXKWCI/AAAAAAAAAFU/SoB93uWJ8W0/s1600/jetpack+grand+theft+auto+san+andreas', '2019-07-17 17:00:00.000000', '2019-07-21 17:00:00.000000'),
+(5, 2, 2, 'POPOK PEMBESAR BAYI', 99000, 'mami pokok tak ada bocor', 'https://my-best.id/wp-content/uploads/2018/01/Keunggulan-dan-kekurangan-dari-popok-tipe-tape-300x212.jpg', '2019-07-02 17:00:00.000000', '2019-07-25 17:00:00.000000'),
+(6, 2, 2, 'DOT SUSU EMAK', 11000, 'dot mantap anti bocor mirip dengan aslinya', 'https://i0.wp.com/asibayi.com/wp-content/uploads/2011/08/Mimijumi-Botol-Susu-Mirip-Payudara.jpg', '2019-07-10 17:00:00.000000', '2019-07-28 17:00:00.000000'),
+(7, 3, 3, 'BAN SEREP', 121233, 'ban anti bocor ', 'https://cdn0-production-images-kly.akamaized.net/C1SSK5Z5MWSo85Y6mLjhAlKZwGg=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2242313/original/001072900_1528358502-Ban_serep.jpg', '2019-07-05 17:00:00.000000', '2019-07-26 17:00:00.000000'),
+(8, 3, 3, 'AVANZA GRANDMAX', 222222, 'kuat di tanjakan dan turunan', 'https://ik.imagekit.io/hj8sm3kk7/large/gallery/color/38/1654/toyota-avanza-2019-color-463819.jpg', '2019-07-08 17:00:00.000000', '2019-07-09 17:00:00.000000'),
+(9, 4, 4, 'RAKET NYAMUK', 111111, 'bisa untuk olahraga dan memberantas nyamuk', 'https://1.bp.blogspot.com/-hLFvhXrcLWM/WpnrtvXHimI/AAAAAAAANqQ/byNK1gywi1wQ-cIBSAKUVpndqDTSO8VNACK4BGAYYCw/s320/tips-menggunakan-raket-nyamuk-789571.jpg', '2019-07-08 17:00:00.000000', '2019-07-10 17:00:00.000000'),
+(10, 4, 4, 'BOLA DRIBEL', 44444, 'bisa goyang dribel dan di dribel', 'https://s.kaskus.id/images/2017/05/05/9672704_201705051203500795.jpg', '2019-07-10 17:00:00.000000', '2019-07-12 17:00:00.000000'),
+(15, 5, 1, 'LEMARI IKEA', 567654, 'ukuran 14x15', 'https://ecs7.tokopedia.net/img/cache/700/product-1/2019/1/11/4482427/4482427_016a1e90-1f8b-494b-beb9-2789890347af_700_700.jpg', '2019-07-08 17:00:00.000000', '2019-07-09 17:00:00.000000'),
+(16, 5, 1, 'KASUR RUSAK', 998990, 'kasur mantab muat untuk treesome', 'https://ecs7.tokopedia.net/img/product-1/2017/5/26/184809604/184809604_d0d1782e-f6a0-44e1-b808-f5eae5be4f8f_1024_755.jpg', '2019-07-08 17:00:00.000000', '2019-07-10 17:00:00.000000');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `produk`
+--
+ALTER TABLE `produk`
+  ADD PRIMARY KEY (`id_produk`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `produk`
+--
+ALTER TABLE `produk`
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
