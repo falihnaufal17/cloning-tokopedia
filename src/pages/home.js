@@ -1,8 +1,8 @@
 //libray
 import React, { Component } from 'react'
 import {
-    Container, Row, Col, Card, CardGroup, Button, CardImg, CardTitle, CardText, CardDeck,
-    CardSubtitle, CardBody
+    Container, Row, Col, Card, CardImg, CardText,
+    CardSubtitle
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import Foot from '../component/FooterBar'
@@ -34,7 +34,7 @@ export default class Home extends Component {
 
         return (
             <div>
-                <Container style={{marginTop:"100px"}}>
+                <Container style={{ marginTop: "100px" }}>
                     <Row>
                         <Col md={12} >
                             <div className="productStyle">
@@ -62,9 +62,9 @@ export default class Home extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Foot/>
+                <Foot />
             </div>
-           
+
         )
     }
 }
