@@ -5,10 +5,10 @@ import {
     CardSubtitle, CardBody
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
-import Foot from '../component/FooterBar'
+
 //Css
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import '../index.css'
 
 //data
 import Dummy from '../data/produk'
@@ -34,7 +34,7 @@ export default class Home extends Component {
 
         return (
             <div>
-                <Container style={{marginTop:"100px"}}>
+                <Container >
                     <Row>
                         <Col md={12} >
                             <div className="productStyle">
@@ -62,9 +62,8 @@ export default class Home extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Foot/>
+
             </div>
-           
         )
     }
 }
