@@ -1,0 +1,6 @@
+querry get
+
+SELECT pr.nama_produk,pr.harga,pr.foto,kt.nama_kategori
+FROM produk as pr
+INNER JOIN kategori as kt
+ON pr.id_kategory = kt.id_kategori
