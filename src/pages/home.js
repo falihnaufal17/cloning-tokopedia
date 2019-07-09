@@ -4,6 +4,7 @@ import {
     Container, Row, Col, Card, CardGroup, Button, CardImg, CardTitle, CardText, CardDeck,
     CardSubtitle, CardBody
 } from 'reactstrap';
+import { Link } from 'react-router-dom'
 
 //Css
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -43,13 +44,15 @@ export default class Home extends Component {
                                         return (
 
                                             <Card className="card">
-                                                <CardImg className="ImgCard" top width="100%" src={product.image} alt="Card image cap" />
-                                                <div className="bodyCard">
-                                                    <CardSubtitle className="title">{text(product.product_name)}</CardSubtitle>
-                                                    <CardSubtitle className="price">Rp {product.price}</CardSubtitle>
-                                                    <CardText > <small className="text-muted">{product.location}</small></CardText>
-                                                    <CardText hover={product.seller_name} />
-                                                </div>
+                                                <Link to={`/detailProduct/${product.id_produk}`} key={key} style={{ textDecoration: 'none' }}>
+                                                    <CardImg className="ImgCard" top width="100%" src={product.image} alt="Card image cap" />
+                                                    <div className="bodyCard">
+                                                        <CardSubtitle className="title">{text(product.product_name)}</CardSubtitle>
+                                                        <CardSubtitle className="price">Rp {product.price}</CardSubtitle>
+                                                        <CardText > <small className="text-muted">{product.location}</small></CardText>
+                                                        <CardText hover={product.seller_name} />
+                                                    </div>
+                                                </Link>
                                             </Card>
                                         )
                                     })

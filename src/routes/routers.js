@@ -10,7 +10,7 @@ export default class Routing extends Component {
         return (
             <Router>
                 <Route exact path='/' component={Home} />
-                <Route exact path='/detailProduct' component={DetailProduct} />
+                <Route exact path='/detailProduct/:id_product' component={DetailProduct} />
                 <Route exact path='/cartList' component={CartList} />
                 <Route exact path='/transaction' component={Transaction} />
             </Router>
