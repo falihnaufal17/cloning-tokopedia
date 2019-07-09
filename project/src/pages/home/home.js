@@ -1,17 +1,17 @@
 //libray
 import React, { Component } from 'react'
 import {
-    Container, Row, Col, Card, CardImg, CardText,
-    CardSubtitle
+    Container, Row, Col, Card, CardImg, CardText, CardSubtitle
 } from 'reactstrap';
-import { Link } from 'react-router-dom'
-import Foot from '../component/FooterBar'
+
 //Css
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
 //data
-import Dummy from '../data/produk'
+import Promo from './promo'
+import Category from './category'
+import Dummy from '../../data/produk'
 
 export default class Home extends Component {
     constructor() {
@@ -24,7 +24,7 @@ export default class Home extends Component {
     render() {
         function text(text) {
             if (text.length > 25) {
-                let textSplit = text.substr(0, 25)
+                let textSplit = text.substr(0, 30)
                 return `${textSplit} ...`
             } else {
                 let textSplit = text
@@ -34,17 +34,26 @@ export default class Home extends Component {
 
         return (
             <div>
-                <Container style={{ marginTop: "100px" }}>
-                    <Row>
-                        <Col md={12} >
-                            <div className="productStyle">
-                                {
+                <Container >
+                    {/* PROMOSI */}
+                    <section>
+                        <Promo />
+                    </section>
 
-                                    this.state.data.map((product, key) => {
-                                        return (
+                    <section>
+                        <Category />
+                    </section>
 
-                                            <Card className="card">
-                                                <Link to={`/detailProduct/${product.id_produk}`} key={key} style={{ textDecoration: 'none' }}>
+                    <section>
+                        <Row>
+                            <Col>
+                                <div className="productStyle">
+                                    {
+
+                                        this.state.data.map((product, key) => {
+                                            return (
+
+                                                <Card className="card">
                                                     <CardImg className="ImgCard" top width="100%" src={product.image} alt="Card image cap" />
                                                     <div className="bodyCard">
                                                         <CardSubtitle className="title">{text(product.product_name)}</CardSubtitle>
@@ -52,19 +61,18 @@ export default class Home extends Component {
                                                         <CardText > <small className="text-muted">{product.location}</small></CardText>
                                                         <CardText hover={product.seller_name} />
                                                     </div>
-                                                </Link>
-                                            </Card>
-                                        )
-                                    })
+                                                </Card>
+                                            )
+                                        })
 
-                                }
-                            </div>
-                        </Col>
-                    </Row>
+                                    }
+                                </div>
+                            </Col>
+                        </Row>
+                    </section>
                 </Container>
-                <Foot />
-            </div>
 
+            </div>
         )
     }
 }
