@@ -1,4 +1,4 @@
- const data = [
+const data = [
     {
         "product_name": "SENTER AJAIB PEMBESAR APA SAJA",
         "price": 1200100,
@@ -7,7 +7,7 @@
         "seller_name": "koh lim si penjual elektronik",
         "phone": 657474627,
         "email": "koh@lim.com",
-        "location":"jepang"
+        "location": "jepang"
     },
     {
         "product_name": "JET PACK GTA SA",
@@ -17,7 +17,7 @@
         "seller_name": "koh lim si penjual elektronik",
         "phone": 657474627,
         "email": "koh@lim.com",
-        "location":"san andreas"
+        "location": "san andreas"
     },
     {
         "product_name": "POPOK PEMBESAR BAYI",
@@ -26,8 +26,8 @@
         "category_name": "ibu dan bayi",
         "seller_name": "bu siti si penjual alat bayi",
         "phone": 123456789,
-        "email": "siti@markonah.com"
-        "location":"los santos"
+        "email": "siti@markonah.com",
+        "location": "los santos"
     },
     {
         "product_name": "DOT SUSU EMAK",
@@ -36,8 +36,8 @@
         "category_name": "ibu dan bayi",
         "seller_name": "bu siti si penjual alat bayi",
         "phone": 123456789,
-        "email": "siti@markonah.com"
-        "location":"purba lingga"
+        "email": "siti@markonah.com",
+        "location": "purba lingga"
     },
     {
         "product_name": "BAN SEREP",
@@ -46,8 +46,8 @@
         "category_name": "otomotif",
         "seller_name": "alexander parto si penjual otomotif",
         "phone": 696969696,
-        "email": "alex@parto.com"
-        "location":"europe"
+        "email": "alex@parto.com",
+        "location": "europe"
     },
     {
         "product_name": "AVANZA GRANDMAX",
@@ -56,8 +56,8 @@
         "category_name": "otomotif",
         "seller_name": "alexander parto si penjual otomotif",
         "phone": 696969696,
-        "email": "alex@parto.com"
-        "location":"lenteng agung"
+        "email": "alex@parto.com",
+        "location": "lenteng agung"
     },
     {
         "product_name": "RAKET NYAMUK",
@@ -66,8 +66,8 @@
         "category_name": "olahraga",
         "seller_name": "bu kayn si penjual alat olahraga",
         "phone": 123123123,
-        "email": "tolong@bukain.com"
-        "location":"srilangka"
+        "email": "tolong@bukain.com",
+        "location": "srilangka"
     },
     {
         "product_name": "BOLA DRIBEL",
@@ -76,8 +76,8 @@
         "category_name": "olahraga",
         "seller_name": "bu kayn si penjual alat olahraga",
         "phone": 123123123,
-        "email": "tolong@bukain.com"
-        "location":"myanmar"
+        "email": "tolong@bukain.com",
+        "location": "myanmar"
     },
     {
         "product_name": "LEMARI IKEA",
@@ -86,8 +86,8 @@
         "category_name": "furniture",
         "seller_name": "mang jaja si penjual furniture",
         "phone": 987654321,
-        "email": "jaja@miharja.com"
-        "location":"papua new guinea"
+        "email": "jaja@miharja.com",
+        "location": "papua new guinea"
     },
     {
         "product_name": "KASUR RUSAK",
@@ -96,8 +96,8 @@
         "category_name": "furniture",
         "seller_name": "mang jaja si penjual furniture",
         "phone": 987654321,
-        "email": "jaja@miharja.com"
-        "location":"hawai"
+        "email": "jaja@miharja.com",
+        "location": "hawai"
     }
 ]
 module.exports = data

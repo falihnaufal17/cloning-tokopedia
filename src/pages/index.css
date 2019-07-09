@@ -1,0 +1,54 @@
+.ImgCard {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ImgCard:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.productStyle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.display {
+    flex-wrap: wrap;
+}
+
+.CardDeck {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 20%;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.card {
+    width: 17%;
+    height: 300px;
+    margin: 1em;
+    border: none;
+}
+
+.bodyCard {
+    padding: 10px;
+}
+
+.col {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.price {
+    color: orange;
+    font-weight: 600;
+    margin-top: 3px;
+}
