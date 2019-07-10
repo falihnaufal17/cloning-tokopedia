@@ -24,7 +24,7 @@ export default class Home extends Component {
     render() {
         function text(text) {
             if (text.length > 25) {
-                let textSplit = text.substr(0, 30)
+                let textSplit = text.substr(0, 50)
                 return `${textSplit} ...`
             } else {
                 let textSplit = text
@@ -34,7 +34,7 @@ export default class Home extends Component {
 
         return (
             <div>
-                <Container >
+                <Container style={{ marginLeft: '10px', marginRight: '10px' }}>
                     {/* PROMOSI */}
                     <section>
                         <Promo />

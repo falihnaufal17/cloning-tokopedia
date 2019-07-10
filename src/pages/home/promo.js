@@ -68,7 +68,7 @@ class Banner extends Component {
                     key={item.src}
                 >
                     <Row>
-                        <Col sm="12" md={{ size: 4, offset: 2 }}><img className="imgBanner" src={item.src} alt={item.altText} /></Col>
+                        <Col sm="12" md={{ size: 10, offset: 1 }}><img className="imgBanner" src={item.src} alt={item.altText} /></Col>
                     </Row>
 
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
