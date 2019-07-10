@@ -40,27 +40,27 @@ export default class DetailProduct extends Component {
     render() {
         let getId = Number(this.props.match.params.id_product)
         let dataById = dummy.find((item => item.id_produk === getId))
-        let     subTotal = dataById.price * this.state.qty
+        let subTotal = dataById.price * this.state.qty
         return (
             <div><Navbar />
-            
-            <div key={dataById.id_produk} style={{ marginTop: "100px" }}>
 
-                <button disabled={this.state.qty < 1} onClick={this.substract}>-</button> Qty: {this.state.qty} <button onClick={this.add}>+</button>
-                <br></br>
+                <div key={dataById.id_produk} style={{ marginTop: "100px" }}>
 
-                <img src={dataById.image} alt=""></img>
-                <h1>{dataById.id_produk}. {dataById.product_name}</h1>
-                <img src={dataById.image} alt=""></img>
-                <h1>{dataById.id_produk}. {dataById.product_name}</h1>
-                <img src={dataById.image} alt=""></img>
-                <h1>{dataById.id_produk}. {dataById.product_name}</h1>
-                <img src={dataById.image} alt=""></img>
-                <h1>{dataById.id_produk}. {dataById.product_name}</h1>
+                    <button disabled={this.state.qty < 1} onClick={this.substract}>-</button> Qty: {this.state.qty} <button onClick={this.add}>+</button>
+                    <br></br>
 
-                <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={subTotal} click={this.addToCart.bind(this)} />
-                <Modal gambar={dataById.image} qty={this.state.qty} subTotal={subTotal} hargaAwal={dataById.price} />
-            </div>
+                    <img src={dataById.image} alt=""></img>
+                    <h1>{dataById.id_produk}. {dataById.product_name}</h1>
+                    <img src={dataById.image} alt=""></img>
+                    <h1>{dataById.id_produk}. {dataById.product_name}</h1>
+                    <img src={dataById.image} alt=""></img>
+                    <h1>{dataById.id_produk}. {dataById.product_name}</h1>
+                    <img src={dataById.image} alt=""></img>
+                    <h1>{dataById.id_produk}. {dataById.product_name}</h1>
+
+                    <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={subTotal} click={this.addToCart.bind(this)} />
+                    <Modal gambar={dataById.image} qty={this.state.qty} subTotal={subTotal} hargaAwal={dataById.price} />
+                </div>
             </div>
         )
     }
