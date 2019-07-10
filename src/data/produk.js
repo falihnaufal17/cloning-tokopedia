@@ -6,6 +6,7 @@ const data = [
         "image": "https://cdn.idntimes.com/content-images/post/20161208/5-35b6343f68c36d03c2495f7c84e1dede.jpg",
         "category_name": "elektronik",
         "seller_name": "koh lim si penjual elektronik",
+        "seller_foto":"https://cdn2.tstatic.net/pontianak/foto/bank/images/herkulanus-hp.jpg",
         "phone": 657474627,
         "email": "koh@lim.com",
         "location": "jepang"
@@ -17,6 +18,7 @@ const data = [
         "image": "http://1.bp.blogspot.com/-K02ax-jdvIQ/TmLiCTXKWCI/AAAAAAAAAFU/SoB93uWJ8W0/s1600/jetpack+grand+theft+auto+san+andreas",
         "category_name": "elektronik",
         "seller_name": "koh lim si penjual elektronik",
+        "seller_foto":"https://cdn2.tstatic.net/pontianak/foto/bank/images/herkulanus-hp.jpg",
         "phone": 657474627,
         "email": "koh@lim.com",
         "location": "san andreas"
@@ -28,6 +30,7 @@ const data = [
         "image": "https://my-best.id/wp-content/uploads/2018/01/Keunggulan-dan-kekurangan-dari-popok-tipe-tape-300x212.jpg",
         "category_name": "ibu dan bayi",
         "seller_name": "bu siti si penjual alat bayi",
+        "seller_foto":"https://makassar.terkini.id/aset/images/sites/2/2018/10/youtube-com-1-696x392.jpg",
         "phone": 123456789,
         "email": "siti@markonah.com",
         "location": "los santos"
@@ -39,6 +42,7 @@ const data = [
         "image": "https://i0.wp.com/asibayi.com/wp-content/uploads/2011/08/Mimijumi-Botol-Susu-Mirip-Payudara.jpg",
         "category_name": "ibu dan bayi",
         "seller_name": "bu siti si penjual alat bayi",
+        "seller_foto":"https://makassar.terkini.id/aset/images/sites/2/2018/10/youtube-com-1-696x392.jpg",
         "phone": 123456789,
         "email": "siti@markonah.com",
         "location": "purba lingga"
@@ -50,6 +54,7 @@ const data = [
         "image": "https://cdn0-production-images-kly.akamaized.net/C1SSK5Z5MWSo85Y6mLjhAlKZwGg=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2242313/original/001072900_1528358502-Ban_serep.jpg",
         "category_name": "otomotif",
         "seller_name": "alexander parto si penjual otomotif",
+        "seller_foto":"https://kampungrison.files.wordpress.com/2008/07/wp311.jpg",
         "phone": 696969696,
         "email": "alex@parto.com",
         "location": "europe"
@@ -61,6 +66,7 @@ const data = [
         "image": "https://ik.imagekit.io/hj8sm3kk7/large/gallery/color/38/1654/toyota-avanza-2019-color-463819.jpg",
         "category_name": "otomotif",
         "seller_name": "alexander parto si penjual otomotif",
+        "seller_foto":"https://kampungrison.files.wordpress.com/2008/07/wp311.jpg",
         "phone": 696969696,
         "email": "alex@parto.com",
         "location": "lenteng agung"
@@ -72,6 +78,7 @@ const data = [
         "image": "https://1.bp.blogspot.com/-hLFvhXrcLWM/WpnrtvXHimI/AAAAAAAANqQ/byNK1gywi1wQ-cIBSAKUVpndqDTSO8VNACK4BGAYYCw/s320/tips-menggunakan-raket-nyamuk-789571.jpg",
         "category_name": "olahraga",
         "seller_name": "bu kayn si penjual alat olahraga",
+        "seller_foto":"https://quipper-video-wordpress.s3.amazonaws.com/images/2018/06/Mau-Hati-Lebih-Lega-Simak-6-Tips-Menjadi-Orang-Sabar.png",
         "phone": 123123123,
         "email": "tolong@bukain.com",
         "location": "srilangka"
@@ -83,6 +90,7 @@ const data = [
         "image": "https://s.kaskus.id/images/2017/05/05/9672704_201705051203500795.jpg",
         "category_name": "olahraga",
         "seller_name": "bu kayn si penjual alat olahraga",
+        "seller_foto":"https://quipper-video-wordpress.s3.amazonaws.com/images/2018/06/Mau-Hati-Lebih-Lega-Simak-6-Tips-Menjadi-Orang-Sabar.png",
         "phone": 123123123,
         "email": "tolong@bukain.com",
         "location": "myanmar"
@@ -93,7 +101,8 @@ const data = [
         "price": 567654,
         "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2019/1/11/4482427/4482427_016a1e90-1f8b-494b-beb9-2789890347af_700_700.jpg",
         "category_name": "furniture",
-        "seller_name": "mang jaja si penjual furniture",
+        "seller_name": "tante mirna si penjual furniture",
+        "seller_foto":"https://damniloveindonesia.com/image/catalog/explore_indonesia/Artikel/Culture_and_Heritage/salah_paham_orang_indonesia-_ke_asing/1000xauto-wanita-indonesia.jpg",
         "phone": 987654321,
         "email": "jaja@miharja.com",
         "location": "papua new guinea"
@@ -104,7 +113,8 @@ const data = [
         "price": 998990,
         "image": "https://ecs7.tokopedia.net/img/product-1/2017/5/26/184809604/184809604_d0d1782e-f6a0-44e1-b808-f5eae5be4f8f_1024_755.jpg",
         "category_name": "furniture",
-        "seller_name": "mang jaja si penjual furniture",
+        "seller_name": "tante mirna si penjual furniture",
+        "seller_foto":"https://damniloveindonesia.com/image/catalog/explore_indonesia/Artikel/Culture_and_Heritage/salah_paham_orang_indonesia-_ke_asing/1000xauto-wanita-indonesia.jpg",
         "phone": 987654321,
         "email": "jaja@miharja.com",
         "location": "hawai"
