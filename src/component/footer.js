@@ -29,7 +29,7 @@ export default class Example extends React.Component {
         
         <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom" >
             <a class="navbar-brand" href="javascript:void(0)">
-              <img class="fotofooter" src="https://cdns.klimg.com/resized/630x/g/f/o/foto_aldiena_cena_model_hot_yang_diduga_terlibat_prostitusi/aldiena_cena-20190112-008-rita.jpg" alt="Italian Trulli" /></a>
+              <img class="fotofooter img-rounded"  src="https://cdns.klimg.com/resized/630x/g/f/o/foto_aldiena_cena_model_hot_yang_diduga_terlibat_prostitusi/aldiena_cena-20190112-008-rita.jpg" alt="Italian Trulli" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
               <span class="navbar-toggler-icon"></span>
             </button>
