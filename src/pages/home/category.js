@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Input, Button } from 'reactstrap';
 
 import Cat from './assetCategory/categoryfavorite'
 
@@ -41,9 +41,27 @@ export default class category extends Component {
                     </Col>
                     <Col xs="6">
                         <h5 style={{ float: 'left' }}>Top Up & Tagihan</h5>
-                        <h6 style={{ float: 'right' }}>Lihat Semua</h6>
+                        <h6 style={{ float: 'right', color: 'green' }}>Lihat Semua</h6>
                         <Col style={{ width: '100%', border: '0.5px solid rgb(204, 204, 204, 0.5)', height: '130px', borderRadius: '5px', marginTop: '40px' }}>
-                           <span>Masih kosong</span>
+                            <Row>
+                                <Col style={{ width: '100%', height: '35px', borderBottom: '1px solid rgb(204, 204, 204, 0.5)', verticalAlign: 'center', paddingTop: '5px', fontSize: '14px' }}>
+                                    <Col style={{ borderBottom: '2px solid green' }}>Pulsa</Col>
+                                    <Col>Paket Data</Col>
+                                    <Col> Listrik PLN</Col>
+                                    <Col>Flight</Col>
+                                </Col>
+                                <Col>
+                                    <Col>
+                                        <p style={{ fontSize: '13px', marginTop: '-10px', position: 'absolute' }}>Nomor Telepon</p>
+                                        <Input style={{ width: '160px', height: '35px', marginTop: '15px', fontSize: '13px' }} placeholder="08123456789" />
+                                    </Col>
+                                    <Col style={{ marginLeft: '-120px' }}>
+                                        <p style={{ fontSize: '13px', marginTop: '-10px', position: 'absolute' }}>Nominal</p>
+                                        <Input style={{ width: '160px', height: '35px', marginTop: '15px' }} />
+                                        <Button color="success" style={{ width: '80px', height: '35px', marginTop: '15px', marginLeft: '10px' }}>Beli</Button>
+                                    </Col>
+                                </Col>
+                            </Row>
                         </Col>
                     </Col>
                 </Row>
