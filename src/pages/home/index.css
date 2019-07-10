@@ -12,7 +12,7 @@
 
 /* CategoryWrap */
 .CategoryWrap {
-    height: 300px;
+    height: 280px;
     width: 100%;
     margin-top: 2em;
     border-radius: 15px;
@@ -61,6 +61,15 @@ ul li {
     padding-left: 2em;
 }
 
+.categotyBot {
+    padding: 5px;
+    border: 0.5px solid rgb(204, 204, 204, 0.5);
+    border-radius: 25px;
+    margin-right: 10px;
+    height: 40px;
+    text-align: center;
+}
+
 /* View List */
 .ImgCard {
     height: 200px;
@@ -100,7 +109,8 @@ ul li {
 }
 
 .bodyCard {
-    padding: 10px;
+    padding-top: 12px;
+    padding-left: 5px;
 }
 
 .col {
@@ -112,10 +122,11 @@ ul li {
     font-weight: 600;
     font-size: 14px;
     color: black;
+    line-height: normal;
 }
 
 .price {
     color: orange;
     font-weight: 600;
-    margin-top: 3px;
+    margin-top: -3px;
 }

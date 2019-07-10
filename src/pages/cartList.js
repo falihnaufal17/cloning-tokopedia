@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.css'
 export default class CartList extends Component {
     render() {
         return (
@@ -16,6 +17,14 @@ export default class CartList extends Component {
                             </div>
                             <div class="card" style={{ width: "100%" }}>
                                 <h5 class="card-title">Product Name</h5>
+                                <label class="checkbox">apa wes
+                                    <input class="checkmark" type="checkbox" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox">apa wes
+                                    <input class="checkmark" type="checkbox" />
+                                    <span class="checkmark"></span>
+                                </label>
                                 <p>Location</p>
                             </div>
                         </div>

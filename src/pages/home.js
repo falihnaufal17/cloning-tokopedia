@@ -26,8 +26,8 @@ export default class Home extends Component {
     }
     render() {
         function text(text) {
-            if (text.length > 25) {
-                let textSplit = text.substr(0, 25)
+            if (text.length > 50) {
+                let textSplit = text.substr(0, 43)
                 return `${textSplit} ...`
             } else {
                 let textSplit = text
@@ -64,6 +64,13 @@ export default class Home extends Component {
                                                             <CardSubtitle className="title">{text(product.product_name)}</CardSubtitle>
                                                             <CardSubtitle className="price">Rp {product.price}</CardSubtitle>
                                                             <CardText > <small className="text-muted">{product.location}</small></CardText>
+                                                            <div style={{ color: 'gold', marginTop: '-18px' }}>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star checked"></span>
+                                                                <span class="fa fa-star"></span>
+                                                                <span class="fa fa-star"></span>
+                                                            </div>
                                                             <CardText hover={product.seller_name} />
                                                         </div>
                                                     </Link>
