@@ -40,7 +40,7 @@ export default class DetailProduct extends Component {
     render() {
         let getId = Number(this.props.match.params.id_product)
         let dataById = dummy.find((item => item.id_produk === getId))
-        let harga = dataById.price * this.state.qty
+        let subTotal = dataById.price * this.state.qty
         return (
             <div key={dataById.id_produk} style={{ marginTop: "100px" }}>
 
@@ -56,8 +56,8 @@ export default class DetailProduct extends Component {
                 <img src={dataById.image} alt=""></img>
                 <h1>{dataById.id_produk}. {dataById.product_name}</h1>
 
-                <Kaki kota={dataById.location} nama={dataById.seller_name} harga={harga} click={this.addToCart.bind(this)} />
-                <Modal gambar={dataById.image} />
+                <Kaki kota={dataById.location} nama={dataById.seller_name} subTotal={subTotal} click={this.addToCart.bind(this)} />
+                <Modal gambar={dataById.image} qty={this.state.qty} subTotal={subTotal} hargaAwal={dataById.price} />
             </div>
         )
     }
