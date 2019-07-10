@@ -4,6 +4,7 @@ import data from '../data/kategori.js'
 import '../css/navbar.css';
 import './index.css'
 import { Link } from 'react-router-dom';
+import Trolli from '../assets/trolli.png'
 // import {Link} from 'react-router-dom';
 
 export default class Example extends React.Component {
@@ -25,7 +26,7 @@ export default class Example extends React.Component {
     return (
       <div class="fixed-top" style={{ backgroundColor: 'white' }}>
         <section style={{ width: '100%' }}>
-          <p className="headerTopLeft">Download Tokopedia App</p>
+          <a href="https://www.tokopedia.com/mobile-apps/"><p className="headerTopLeft">Download Tokopedia App</p></a>
           <ul className="headerTopRight">
             <li>Mitra Tokopedia</li>
             <li>Mulai Berjualan</li>
@@ -58,20 +59,20 @@ export default class Example extends React.Component {
           <form class="form-inline" onSubmit={this.handleSubmit}>
             <div class="input-group">
 
-              <input class="form-control mr-sm-9" style={{ height: '35px', width: '680px', marginTop: '2px', fontSize: '12px', borderRight: 'none' }} type="text" placeholder="Cari produk atau toko" />
+              <input class="form-control mr-sm-9" style={{ height: '35px', width: '700px', marginTop: '2px', fontSize: '12px', borderRight: 'none' }} type="text" placeholder="Cari produk atau toko" />
               <button style={{ height: '35px', width: '40px', marginTop: '2px', borderTopLeftRadius: '0', borderBottomLeftRadius: '0', marginRight: '30px', borderLeft: 'none' }} class="input-group-text" ><i class="fas fa-search"></i></button>
               <div class="input-group-prepend">
                 <div class="float-right">
                 </div>
-                <button>
-                  <i class="fas fa-shopping-cart"></i>
-                </button>
-                <p style={{ marginLeft: '50px', borderRight: '1px solid  rgb(185, 185, 185)' }}></p>
+                <a href="#">
+                  <img className="trolli" src={Trolli} />
+                </a>
+                <div style={{ marginLeft: '40px', borderRight: '1px solid  rgb(185, 185, 185)', marginTop: '10px', height: '20px' }}></div>
                 <div class="float-right">
 
                   <ul class="navbar-nav float-right">
                     <li class="nav-item">
-                      <a class="nav-link" style={{ color: 'grey' }} href="javascript:void(0)">Daftar </a>
+                      <a class="nav-link" style={{ color: 'grey' }} href="javascript:void(0)">Login</a>
                     </li>
                     <li class="nav-item">
                       <button type="button" class="btn btn-outline-success">Sign Up</button>
@@ -84,7 +85,7 @@ export default class Example extends React.Component {
             </div>
           </form>
         </nav>
-      </div>
+      </div >
     );
   }
 }

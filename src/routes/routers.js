@@ -10,7 +10,7 @@ export default class Routing extends Component {
     render() {
         return (
             <Router>
-                {/* <Navbar/> */}
+                <Navbar />
                 <Route exact path='/' component={Home} />
                 <Route exact path='/detailProduct/:id_product' component={DetailProduct} />
                 <Route exact path='/cartList' component={CartList} />
