@@ -1,7 +1,6 @@
 const data = []
 let subTotal = data.map((item) => {
-    const result = item.price * item.qty
-    return result
+    return item.price * item.qty
 })
 data.push(
     {
