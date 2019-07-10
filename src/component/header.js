@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../data/kategori.js'
-
+import ModalR from '../component/modalregist'
 import '../css/navbar.css';
 import './index.css'
 import { Link } from 'react-router-dom';
@@ -23,6 +23,7 @@ export default class Example extends React.Component {
   }
   render() {
     return (
+      <div>
       <div class="fixed-top" style={{ backgroundColor: 'white' }}>
         <section style={{ width: '100%' }}>
           <p className="headerTopLeft">Download Tokopedia App</p>
@@ -74,7 +75,7 @@ export default class Example extends React.Component {
                       <a class="nav-link" style={{ color: 'grey' }} href="javascript:void(0)">Daftar </a>
                     </li>
                     <li class="nav-item">
-                      <button type="button" class="btn btn-outline-success">Sign Up</button>
+                      <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#elegantModalForm">Sign Up</button>
                     </li>
                   </ul>
 
@@ -84,6 +85,10 @@ export default class Example extends React.Component {
             </div>
           </form>
         </nav>
+        
+      </div>
+      <ModalR/>
+      
       </div>
     );
   }

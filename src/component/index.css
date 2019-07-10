@@ -67,3 +67,39 @@ ul li:hover {
     margin-top: 33px;
     box-shadow: -0.5px -0.1px 4px rgba(0, 0, 0, 0.1);
 }
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    max-width: 100%;
+    padding: 1em 2em;
+}
+h1 { margin: 150px auto 50px auto; }
+
+.image-container {
+    display: inline-block;
+    padding: 1em;
+    max-width: 50%;
+    vertical-align: top;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.image-container:hover {
+    background-color: #cde;
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: crosshair;
+    display: block;
+    max-width: 100%;
+    padding-bottom: 10em;
+    width: 100em;
+}
