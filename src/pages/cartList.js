@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import dataCart from '../data/cart'
 import 'bootstrap/dist/css/bootstrap.min.css'
 export default class CartList extends Component {
     render() {
