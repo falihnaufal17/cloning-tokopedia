@@ -1,9 +1,7 @@
 import React from 'react';
 import dummy from '../data/produk';
-import Modal  from './modal';
 
 import '../css/navbar.css';
-// import {Link} from 'react-router-dom';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -26,56 +24,61 @@ export default class Example extends React.Component {
     //     let dataById = dummy.find((item => item.id_produk === getId))
     return (
       <div>
-        
+
         <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom" >
             <a class="navbar-brand" href="javascript:void(0)">
               <img class="fotofooter img-rounded"  src="https://cdns.klimg.com/resized/630x/g/f/o/foto_aldiena_cena_model_hot_yang_diduga_terlibat_prostitusi/aldiena_cena-20190112-008-rita.jpg" alt="Italian Trulli" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
               <span class="navbar-toggler-icon"></span>
             </button>
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img class="fotofooter" src="https://cdns.klimg.com/resized/630x/g/f/o/foto_aldiena_cena_model_hot_yang_diduga_terlibat_prostitusi/aldiena_cena-20190112-008-rita.jpg" alt="Italian Trulli" /></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div class="collapse navbar-collapse" id="navb">
-              <ul class="navbar-nav mr-auto">
-                
-                <div class="pdp-shop__info">
-                            <div class="pdp-shop__info__name-wrapper">
-                              <i title="Power Merchant" class="pdp-shop__info__badge image-power-merchant"></i>
-                                <a href="https://www.tokopedia.com/luxvory">
-                                  <span id="shop-name-info" class="shop-name pdp-shop__info__name" itemprop="name">{this.props.nama}</span>
-                                </a>
-                                <img id="shop-reputation-badge-3883970" src="https://ecs7.tokopedia.net/img/repsys/silver-2.gif" class="pdp-shop__info__reputation" data-original-title="833 points" data-toggle="tooltip" data-placement="top" title=""></img>
-                            </div>
-                        <p class="pdp-shop__info__stats" title="Kota Tangerang • Kota Tangerang • Dibalas ± 1 menit">
-                          <span itemprop="addressLocality">{this.props.kota}</span>&nbsp;•
+          <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+
+              <div class="pdp-shop__info">
+                <div class="pdp-shop__info__name-wrapper">
+                  <i title="Power Merchant" class="pdp-shop__info__badge image-power-merchant"></i>
+                  <a href="https://www.tokopedia.com/luxvory">
+                    <span id="shop-name-info" class="shop-name pdp-shop__info__name" itemprop="name">{this.props.nama}</span>
+                  </a>
+                  <img id="shop-reputation-badge-3883970" src="https://ecs7.tokopedia.net/img/repsys/silver-2.gif" class="pdp-shop__info__reputation" data-original-title="833 points" data-toggle="tooltip" data-placement="top" title=""></img>
+                </div>
+                <p class="pdp-shop__info__stats" title="Kota Tangerang • Kota Tangerang • Dibalas ± 1 menit">
+                  <span itemprop="addressLocality">{this.props.kota}</span>&nbsp;•
                           <span>Online Hari ini</span>&nbsp;
                           <span id="footer-shop-response">• Dibalas ± 1 menit</span>
-                        </p>
-                      </div>
-                <div class="form-inline my-2 ml-5 my-lg-0">
+                </p>
+              </div>
+              <div class="form-inline my-2 ml-5 my-lg-0">
                 <button type="button" class=" btn btn-success btn-" data-toggle="modal" data-target="#myModal">
-                follow
+                  follow
                 </button>
-                </div>
-              </ul>
+              </div>
+            </ul>
 
-              <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav float-right">
-                      <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">RP{this.props.harga}</a>
-                      </li>
-                      
-                    </ul>
-                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal" style={{marginRight:20}}>
-                  beli 
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">RP {this.props.subTotal}</a>
+                </li>
+
+              </ul>
+              <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal" style={{ marginRight: 20 }}>
+                beli
                 </button>
 
-                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+              <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
                 tambah kekeranjang
                 </button>
-              </form>
-            </div>
+            </form>
+          </div>
         </nav>
-        
+
       </div>
     );
   }

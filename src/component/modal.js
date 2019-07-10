@@ -22,20 +22,22 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        
+
         <div id="myModal" class="modal fade" role="dialog">
           <div class="modal-dialog modal-lg">
 
             <div class="modal-content">
-             
+
               <div class="modal-body">
-              
-              <img src={this.props.gambar} ></img>
-               
-                
+
+                <img src={this.props.gambar} ></img>
+                <h6>Rp. {this.props.hargaAwal}</h6>
+                <p>Qty: {this.props.qty}</p>
+                <p>Rp. {this.props.subTotal}</p>
+
 
               </div>
-              
+
             </div>
 
           </div>
@@ -46,4 +48,3 @@ export default class Example extends React.Component {
 }
 
 
-   
