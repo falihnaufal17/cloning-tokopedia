@@ -1,0 +1,69 @@
+.logo {
+    width: 140px;
+    margin-left: 16px;
+}
+
+.fotofooter {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 68px;
+    width: 50px
+}
+
+#navbardrop {
+    color: black;
+}
+
+
+.headerTopLeft {
+    color: rgb(185, 185, 185);
+    float: left;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-size: 13.5px;
+    position: absolute;
+    font-weight: 320;
+}
+
+.headerTopLeft:hover {
+    color: green;
+}
+
+.headerTopRight {
+    color: rgb(185, 185, 185);
+    padding-top: 5px;
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    margin-left: 870px;
+    font-size: 13.5px;
+    font-weight: 350;
+}
+
+.navlinkCat {
+    margin-left: -17px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+.navlinkCat:hover {
+    background: rgb(230, 230, 230);
+    color: green;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+ul li {
+    padding-left: 1.8em;
+}
+
+ul li:hover {
+    color: green;
+}
+
+.navbar {
+    margin-top: 33px;
+    box-shadow: -0.5px -0.1px 4px rgba(0, 0, 0, 0.1);
+}

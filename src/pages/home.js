@@ -38,8 +38,8 @@ export default class Home extends Component {
         return (
             <div>
                 <Navbar />
-                <Container>
-                    <section style={{ marginTop: '80px' }}>
+                <Container style={{ marginTop: "100px" }}>
+                    <section>
                         <Promo />
                     </section>
 
@@ -77,9 +77,8 @@ export default class Home extends Component {
                         </Row>
                     </section>
                 </Container>
-
                 <Foot />
-            </div >
+            </div>
 
         )
     }
