@@ -94,9 +94,6 @@ export default class DetailProduct extends Component {
             <div>
             <Ndas/>
             <div class="container">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
-
-           
                 <div key={dataById.id_produk} style={{ marginTop: "100px",marginBottom:"80px" }}>
                     <nav aria-label="breadcrumb" style={{ fontSize: '15px' }}>
                         <ol class="breadcrumb bg-transparent">
@@ -261,33 +258,8 @@ Fast Response, Pengiriman 1 x 24 jam Pemesanan, thanks :)
                         </section>
 
                         <section id="dunkles" class="tab-panel">
-                        <div class="card">
-                        <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some example text. Some example text.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                    <br></br>
-                    <div class="card">
-                        <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some example text. Some example text.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                    <br></br>
-                    <div class="card">
-                        <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some example text. Some example text.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                                    
+                            <h2>komentar terbaik</h2>
+                  
                         
                         </section>
                     </div>
