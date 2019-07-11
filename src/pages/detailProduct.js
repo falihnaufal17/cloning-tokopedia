@@ -94,7 +94,7 @@ export default class DetailProduct extends Component {
             <div>
             <Ndas/>
             <div class="container">
-                <div key={dataById.id_produk} style={{ marginTop: "100px",marginBottom:"80px" }}>
+                <div key={dataById.id_produk} style={{ marginTop: "100px" }}>
                     <nav aria-label="breadcrumb" style={{ fontSize: '15px' }}>
                         <ol class="breadcrumb bg-transparent">
                             <li class="breadcrumb-item"><a href="#">Beranda</a></li>
@@ -227,9 +227,9 @@ export default class DetailProduct extends Component {
                         <section id="marzen" class="tab-panel">
                         <h5>Lens Defense </h5>
                         <p>Auto Focus Crystal melindungi bagian lensa kamera dengan bingkai yang lebih menonjol.</p>
-                        <h5>Flexible Grips</h5>
+                        <h>Flexible Grips</h>
                         <p>Bahan TPU dari Liquid Crystal sangat flexible dan presisi pada gadget.</p>
-                        <h5>Embosed Buttons</h5>
+                        <h3>Embosed Buttons</h3>
                         <p>Tombol pada Liquid Crystal dapat berfungsi dengan baik dan mudah digunakan.</p>
                         <p></p>
 
@@ -258,8 +258,7 @@ Fast Response, Pengiriman 1 x 24 jam Pemesanan, thanks :)
                         </section>
 
                         <section id="dunkles" class="tab-panel">
-                            <h2>komentar terbaik</h2>
-                  
+                        <h2>6C. Dunkles Bock</h2>
                         
                         </section>
                     </div>
