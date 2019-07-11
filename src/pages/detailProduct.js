@@ -52,12 +52,12 @@ export default class DetailProduct extends Component {
 
     addToCart() {
         this.state.cart.push({
-            'product_name': this.state.product_name,
-            'price': this.state.price,
+            'product_name': nama_produk,
+            'price': harga,
             'qty': this.state.qty,
-            'sub_total': this.state.sub_total,
-            'image': this.state.image,
-            'location': this.state.location
+            'sub_total': jumlah_total,
+            'image': gambar,
+            'location': lokasi
         })
         console.log("Add to cart success", this.state.cart)
     }
