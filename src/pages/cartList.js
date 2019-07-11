@@ -9,8 +9,10 @@ import { Input } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import FooterBar from '../component/footernew';
 
-var subs = 0;
+let sutotal = 0, qty = 0, total = 0
+
 export default class CartList extends Component {
+
     constructor(props) {
         super(props)
 
@@ -83,7 +85,8 @@ export default class CartList extends Component {
                                     </Link>
                                     <hr style={{ marginTop: '30px', border: '2px solid rgba(0,0,0,0.1)' }} />
                                     {this.state.data.map((item, key) => {
-                                        subs = item.price * this.state.qty
+                                        qty = item.qty
+                                        sutotal = item.price * this.state.qty
                                         return (
                                             <div class="card" style={{ width: "100%", height: "auto" }}>
                                                 <label class="checkbox">
@@ -156,7 +159,7 @@ export default class CartList extends Component {
                                 <div class="card-body">
                                     <h6 class="card-title">Ringkasan Belanja</h6>
                                     <hr></hr>
-                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp. {Rupiah(subs)}</span></p>
+                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.{Rupiah(sutotal)}</span></p>
                                     <hr></hr>
                                     <Link to={'/transaction'}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button></Link>
                                     <Link to={'/'}>
