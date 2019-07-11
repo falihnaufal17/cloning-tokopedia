@@ -12,7 +12,7 @@ class FooterBar extends Component {
         <div class="row">
 
           <img style={{ width: '100%' }} src="https://a.imge.to/2019/07/10/T9JQT.png"></img>
-          <img style={{ width: '100%' }} src="https://a.imge.to/2019/07/10/T96pi.png"></img>
+          <img style={{ width: '100%' }} src="https://a.imge.to/2019/07/11/cZsGw.png"></img>
         </div>
       </div>
 

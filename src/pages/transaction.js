@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import {
-    Container, Row, Col, Card, CardImg, CardText, CardSubtitle
+    Container, Row, Col
 } from 'reactstrap';
 import '../css/navbar.css';
 
@@ -16,7 +16,18 @@ export default class Transaction extends Component {
                 </div>
 
                 <Container>
-
+                    <Row>
+                        <Col md="12">
+                            <Row>
+                                <Col md="8">
+                                    <h3>Hello gaes</h3>
+                                </Col>
+                                <Col md="4">
+                                    <h3>Hello gaes</h3>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
                 </Container>
 
             </div>

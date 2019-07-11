@@ -24,10 +24,11 @@ export default class Home extends Component {
             data: Dummy,
         }
     }
+
     render() {
         function text(text) {
-            if (text.length > 50) {
-                let textSplit = text.substr(0, 43)
+            if (text.length > 36) {
+                let textSplit = text.substr(0, 36)
                 return `${textSplit} ...`
             } else {
                 let textSplit = text
@@ -53,7 +54,7 @@ export default class Home extends Component {
         return (
             <div>
                 <Navbar />
-                <Container style={{ marginTop: "100px" }}>
+                <Container>
                     <section>
                         <Promo />
                     </section>

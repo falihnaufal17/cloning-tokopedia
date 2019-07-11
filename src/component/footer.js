@@ -26,7 +26,7 @@ export default class Example extends React.Component {
       <div>
 
         <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom" >
-          <a class="navbar-brand" href="javascript:void(0)">
+          <a class="navbar-brand" href="#">
             <img class="fotofooter img-rounded" src={this.props.gambar} alt="Italian Trulli" /></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
             <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@ export default class Example extends React.Component {
             <form class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav float-right">
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">RP {this.props.subTotal}</a>
+                  <a class="nav-link" href="javascript:void(0)"> {this.props.subTotal}</a>
                 </li>
 
               </ul>

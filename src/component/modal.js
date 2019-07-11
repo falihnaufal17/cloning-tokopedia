@@ -25,7 +25,7 @@ export default class Example extends React.Component {
       <div>
 
         <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog modal-lg">
+          <div class={this.props.ukuran}>
 
             <div class="modal-content">
 
