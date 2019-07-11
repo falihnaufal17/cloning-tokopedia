@@ -69,7 +69,7 @@ export default class Example extends React.Component {
                   <div class="float-right">
                   </div>
                   <Link to={'/cartList'}>
-                    <i style={{ marginTop: '12px', color: '#AAA' }} class="fas fa-shopping-cart"></i>
+                    <i style={{ marginTop: '12px', color: '#AAA' }} class="fas fa-shopping-cart"><span class="badge badge-danger">4</span></i>
                   </Link>
                   <div style={{ marginLeft: '40px', borderRight: '1px solid  rgb(185, 185, 185)', marginTop: '10px', height: '20px' }}></div>
                   <div class="float-right">
