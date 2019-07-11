@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 import FooterBar from '../component/footernew';
 
 let sutotal = 0, qty = 0, total = 0
+let id = 0;
 
 export default class CartList extends Component {
 
@@ -18,7 +19,7 @@ export default class CartList extends Component {
 
         this.state = {
             data: dataCart,
-            qty: 1,
+            qty: qty,
             subTotal: 0,
         }
 
@@ -77,16 +78,17 @@ export default class CartList extends Component {
                                         <input type="checkbox" class="form-check-inline form-check-label checkmark" style={{ borderRadius: '10px' }} />
                                         <span class="checkmark"></span>
                                     </label>
-                                    <Link to={'/'}>
-                                        <p style={{
-                                            float: 'right', fontWeight: 700,
-                                            color: 'rgba(49,53,59,.44)'
-                                        }}>Hapus</p>
-                                    </Link>
+                                    <p style={{
+                                        float: 'right', fontWeight: 700,
+                                        color: 'rgba(49,53,59,.44)',
+                                        cursor: 'pointer'
+                                    }} onClick={() => { this.setState({ data: this.state.data = [] }) }}>Hapus</p>
                                     <hr style={{ marginTop: '30px', border: '2px solid rgba(0,0,0,0.1)' }} />
                                     {this.state.data.map((item, key) => {
                                         qty = item.qty
                                         sutotal = item.price * this.state.qty
+                                        total = sutotal
+                                        id = item.id_cart
                                         return (
                                             <div class="card" style={{ width: "100%", height: "auto" }}>
                                                 <label class="checkbox">
@@ -116,11 +118,16 @@ export default class CartList extends Component {
                                                             }}>
                                                                 <img src={"https://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-wishlist-inactive.png"} style={{ width: "25px", height: "25px" }} />
                                                             </div>
-                                                            <div style={{
-                                                                marginRight: "25px"
-                                                            }}>
-                                                                <img src={"https://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-trash.png"} style={{ width: "25px", height: "25px" }} />
-                                                            </div>
+                                                            <Link to="/cartList">
+                                                                <div style={{
+                                                                    marginRight: "25px"
+                                                                }} onClick={() => {
+                                                                    let d = this.state.data.splice(key, 1)
+                                                                    return d
+                                                                }}>
+                                                                    <img src={"https://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-trash.png"} style={{ width: "25px", height: "25px" }} />
+                                                                </div>
+                                                            </Link>
                                                             <div>
                                                                 <button
                                                                     class="btn btn-sm"
@@ -159,9 +166,9 @@ export default class CartList extends Component {
                                 <div class="card-body">
                                     <h6 class="card-title">Ringkasan Belanja</h6>
                                     <hr></hr>
-                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.{Rupiah(sutotal)}</span></p>
+                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.{Rupiah(total)}</span></p>
                                     <hr></hr>
-                                    <Link to={'/transaction'}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button></Link>
+                                    <Link to={`/transaction/${id}`}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button></Link>
                                     <Link to={'/'}>
                                         <div class="card shadow-sm m-auto" style={{ height: "20%", width: "100%", borderRadius: "10px" }}>
                                             <div class="card-body p-3">

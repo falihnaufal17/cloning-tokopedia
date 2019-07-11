@@ -15,7 +15,7 @@ export default class Routing extends Component {
                 <Route exact path='/' component={Home} />
                 <Route exact path='/detailProduct/:id_product' component={DetailProduct} />
                 <Route exact path='/cartList' component={CartList} />
-                <Route exact path='/transaction' component={Transaction} />
+                <Route exact path='/transaction/:id_cart' component={Transaction} />
 
                 <Route path='/daftar' component={daftar} />
             </Router>
