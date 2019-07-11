@@ -28,6 +28,7 @@
 
 .card {
     width: 17%;
+    margin-top: 50px;
     height: 300px;
     margin: 1em;
     border: none;

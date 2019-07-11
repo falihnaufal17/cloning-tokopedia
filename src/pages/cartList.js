@@ -128,7 +128,7 @@ export default class CartList extends Component {
                                 <hr></hr>
                                 <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.</span></p>
                                 <hr></hr>
-                                <button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button>
+                                <Link to={'/transaction'}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button></Link>
                                 <Link to={'/'}>
                                     <div class="card shadow-sm m-auto" style={{ height: "20%", width: "100%", borderRadius: "10px" }}>
                                         <div class="card-body p-3">
