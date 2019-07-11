@@ -39,7 +39,7 @@ export default class Example extends React.Component {
             </ul>
           </section>
 
-          <nav class="navbar navbar-expand-sm" style={{ verticalAlign: 'middle' }} >
+          <nav class="navbar navbar-expand-sm" style={{ verticalAlign: 'baseline' }} >
             {/* src="https://a.imge.to/2019/07/09/TdHXH.jpg" */}
             {/* http://1.bp.blogspot.com/-MYObb95pjRg/VpDg7UwhuFI/AAAAAAAABWw/ZO41qWK-Jgg/s1600/Logo-Tokopedia.jpg */}
 
@@ -64,12 +64,12 @@ export default class Example extends React.Component {
               <div class="input-group">
 
                 <input class="form-control mr-sm-9" style={{ height: '35px', width: '700px', marginTop: '2px', fontSize: '12px', borderRight: 'none' }} type="text" placeholder="Cari produk atau toko" />
-                <button style={{ height: '35px', width: '40px', marginTop: '2px', borderTopLeftRadius: '0', borderBottomLeftRadius: '0', marginRight: '30px', borderLeft: 'none' }} class="input-group-text" ><i class="fas fa-search"></i></button>
+                <button style={{ height: '35px', width: '40px', marginTop: '2px', borderTopLeftRadius: '0', borderBottomLeftRadius: '0', marginRight: '30px', borderLeft: 'none' }} class="input-group-text" ><i style={{ color: 'grey' }} class="fas fa-search"></i></button>
                 <div class="input-group-prepend">
                   <div class="float-right">
                   </div>
                   <Link to={'/cartList'}>
-                    <img className="trolli" src={Trolli} />
+                    <i style={{ marginTop: '12px', color: '#AAA' }} class="fas fa-shopping-cart"></i>
                   </Link>
                   <div style={{ marginLeft: '40px', borderRight: '1px solid  rgb(185, 185, 185)', marginTop: '10px', height: '20px' }}></div>
                   <div class="float-right">

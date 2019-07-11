@@ -65,6 +65,11 @@ ul li {
     padding-left: 1.8em;
 }
 
+.sosmed {
+    padding-left: 18px;
+}
+
+
 ul li:hover {
     color: green;
 }
@@ -72,4 +77,12 @@ ul li:hover {
 .navbar {
     margin-top: 33px;
     box-shadow: -0.5px -0.1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fas {
+    color: grey;
+}
+
+.fas:hover {
+    opacity: 0.7;
 }
