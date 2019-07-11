@@ -9,7 +9,9 @@ const data = [
         "seller_foto": "https://cdn2.tstatic.net/pontianak/foto/bank/images/herkulanus-hp.jpg",
         "phone": 657474627,
         "email": "koh@lim.com",
+        "desc":"Senter adalah sebuah alat listrik portabel yang merupakan sumber cahaya untuk menerangi dan dioperasikan dengan baterai. Biasanya sumber cahayanya adalah dari sebuah bola lampu pijar kecil atau lampu pendar yang dikenal dengan istilah lampu LED.Senter adalah sebuah alat listrik portabel yang merupakan sumber cahaya untuk menerangi dan dioperasikan dengan baterai. Biasanya sumber cahayanya adalah dari sebuah bola lampu pijar kecil atau lampu pendar yang dikenal dengan istilah lampu LED.Senter adalah sebuah alat listrik portabel yang merupakan sumber cahaya untuk menerangi dan dioperasikan dengan baterai. Biasanya sumber cahayanya adalah dari sebuah bola lampu pijar kecil atau lampu pendar yang dikenal dengan istilah lampu LED.",
         "location": "jepang"
+        
     },
     {
         "id_produk": 2,
@@ -21,6 +23,7 @@ const data = [
         "seller_foto": "https://cdn2.tstatic.net/pontianak/foto/bank/images/herkulanus-hp.jpg",
         "phone": 657474627,
         "email": "koh@lim.com",
+        "desc":"Many GTA fans believe that the Jetpack can be found in GTA V, due to a small symbol located on the bottom right corner of the mural located at the top cable car station on Mount Chiliad, which depicts a small stick figure on a Jetpack.The Jetpack source code was found for the first time in the 1.12 update of GTA V by some hackers. By the 1.13 update, there were some new function codes added to the game, but there was still no physical Jetpack so it might come to GTA V via DLC. However, some unconfirmed reports state that the Jetpack may be found in the IAA Headquarters building in downtown Los Santos, or in Grapeseed. Some people think it might be in Fort Zancudo Many GTA fans believe that the Jetpack can be found in GTA V, due to a small symbol located on the bottom right corner of the mural located at the top cable car station on Mount Chiliad, which depicts a small stick figure on a Jetpack.The Jetpack source code was found for the first time in the 1.12 update of GTA V by some hackers. By the 1.13 update, there were some new function codes added to the game, but there was still no physical Jetpack so it might come to GTA V via DLC. However, some unconfirmed reports state that the Jetpack may be found in the IAA Headquarters building in downtown Los Santos, or in Grapeseed. Some people think it might be in Fort Zancudo",
         "location": "san andreas"
     },
     {
@@ -33,11 +36,12 @@ const data = [
         "seller_foto": "https://makassar.terkini.id/aset/images/sites/2/2018/10/youtube-com-1-696x392.jpg",
         "phone": 123456789,
         "email": "siti@markonah.com",
+        "desc":"Popok adalah semacam garmen yang dipakai oleh individu yang tidak bisa mengendalikan pergerakan kandung kemih atau usus mereka, atau tidak bisa atau tidak mau menggunakan toilet. Saat popok sudah dikotori, maka perlu diganti; proses ini biasanya dilakukan oleh orang lain seperti orangtua atau perawat. Jika popok tidak diganti secara berkala maka bisa menimbulkan ruam popok.Popok adalah semacam garmen yang dipakai oleh individu yang tidak bisa mengendalikan pergerakan kandung kemih atau usus mereka, atau tidak bisa atau tidak mau menggunakan toilet. Saat popok sudah dikotori, maka perlu diganti; proses ini biasanya dilakukan oleh orang lain seperti orangtua atau perawat. Jika popok tidak diganti secara berkala maka bisa menimbulkan ruam popok",
         "location": "los santos"
     },
     {
         "id_produk": 4,
-        "product_name": "DOT SUSU EMAK MIRIP DENGAN ASLINYA GARANSI 3 TAHUN",
+        "product_name": "DOT SUSU DARI KULIT TIREK, GARANSI 3 TAHUN",
         "price": 11000,
         "image": "https://i0.wp.com/asibayi.com/wp-content/uploads/2011/08/Mimijumi-Botol-Susu-Mirip-Payudara.jpg",
         "category_name": "ibu dan bayi",
@@ -45,6 +49,7 @@ const data = [
         "seller_foto": "https://makassar.terkini.id/aset/images/sites/2/2018/10/youtube-com-1-696x392.jpg",
         "phone": 123456789,
         "email": "siti@markonah.com",
+        "desc":"ASI merupakan asupan terbaik yang dapat diberikan seorang ibu kepada bayinya. ASI mengandung nutrisi penting bagi pertumbuhan serta membangun antibodi yang melindungi bayi dari penyakit. Selain manfaat nutrisinya, momen menyusui juga membantu menumbuhkan ikatan yang kuat antara ibu dan bayi. Segala kebaikan dari manfaat nutrisi hingga kedekatan hubungan tersebutlah yang membuat Pigeon dengan sepenuh hati dan usahanya mendukung kesuksesan dari program ASI eksklusif ASI merupakan asupan terbaik yang dapat diberikan seorang ibu kepada bayinya. ASI mengandung nutrisi penting bagi pertumbuhan serta membangun antibodi yang melindungi bayi dari penyakit. Selain manfaat nutrisinya, momen menyusui juga membantu menumbuhkan ikatan yang kuat antara ibu dan bayi. Segala kebaikan dari manfaat nutrisi hingga kedekatan hubungan tersebutlah yang membuat Pigeon dengan sepenuh hati dan usahanya mendukung kesuksesan dari program ASI eksklusif.",
         "location": "purba lingga"
     },
     {
@@ -57,6 +62,7 @@ const data = [
         "seller_foto": "https://kampungrison.files.wordpress.com/2008/07/wp311.jpg",
         "phone": 696969696,
         "email": "alex@parto.com",
+        "desc":" Ban serep atau ban cadangan wajib ada di setiap mobil yang belum mengadopsi ban berjenis RFT (Run Flat Tire). Biasanya ban serep berada di bagian belakang mobil, seperti di bagasi atau di bagian kolong.Seperti namanya, ban serep jelas berfungsi sebagai serep alias cadangan mana kala ban mobil kempis atau bocor di tengah jalan. Tapi taukah kamu kalau ban serep juga punya fungsi lain? Ban serep atau ban cadangan wajib ada di setiap mobil yang belum mengadopsi ban berjenis RFT (Run Flat Tire). Biasanya ban serep berada di bagian belakang mobil, seperti di bagasi atau di bagian kolong.Seperti namanya, ban serep jelas berfungsi sebagai serep alias cadangan mana kala ban mobil kempis atau bocor di tengah jalan. Tapi taukah kamu kalau ban serep juga punya fungsi lain?",
         "location": "europe"
     },
     {
@@ -69,6 +75,7 @@ const data = [
         "seller_foto": "https://kampungrison.files.wordpress.com/2008/07/wp311.jpg",
         "phone": 696969696,
         "email": "alex@parto.com",
+        "desc":"Pada tahun 1930-an, kebanyakan teknologi dalam permobilan sudah diciptakan, walaupun sering diciptakan kembali di kemudian hari dan diberikan kredit ke orang lain. Misalnya, pengemudian roda-depan diciptakan kembali oleh Andre Citroën dalam peluncuran Traction Avant pada 1934, meskipun teknologi ini sudah muncul beberapa tahun sebelumnya dalam mobil yang dibuat oleh Alvis dan Cord, dan di dalam mobil balap oleh Miller (dan mungkin telah muncul pada awal 1897).Pada tahun 1930-an, kebanyakan teknologi dalam permobilan sudah diciptakan, walaupun sering diciptakan kembali di kemudian hari dan diberikan kredit ke orang lain. Misalnya, pengemudian roda-depan diciptakan kembali oleh Andre Citroën dalam peluncuran Traction Avant pada 1934, meskipun teknologi ini sudah muncul beberapa tahun sebelumnya dalam mobil yang dibuat oleh Alvis dan Cord, dan di dalam mobil balap oleh Miller (dan mungkin telah muncul pada awal 1897).",
         "location": "lenteng agung"
     },
     {
@@ -81,18 +88,20 @@ const data = [
         "seller_foto": "https://quipper-video-wordpress.s3.amazonaws.com/images/2018/06/Mau-Hati-Lebih-Lega-Simak-6-Tips-Menjadi-Orang-Sabar.png",
         "phone": 123123123,
         "email": "tolong@bukain.com",
+        "desc":"he he he he he he he he he he he he he he he he",
         "location": "srilangka"
     },
     {
         "id_produk": 8,
         "product_name": "BOLA DRIBEL ,TAK PERLU DI JELASKAN PANJANG PANJANG",
         "price": 44444,
-        "image": "https://s.kaskus.id/images/2017/05/05/9672704_201705051203500795.jpg",
+        "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2017/5/4/9993754/9993754_2259a02e-d580-405c-a1ab-41a4960bf4ef_900_800.jpg",
         "category_name": "olahraga",
         "seller_name": "bu kayn si penjual alat olahraga",
         "seller_foto": "https://quipper-video-wordpress.s3.amazonaws.com/images/2018/06/Mau-Hati-Lebih-Lega-Simak-6-Tips-Menjadi-Orang-Sabar.png",
         "phone": 123123123,
         "email": "tolong@bukain.com",
+        "desc":"he he he he he he he he he he he he he he he he",
         "location": "myanmar"
     },
     {
@@ -105,11 +114,12 @@ const data = [
         "seller_foto": "https://damniloveindonesia.com/image/catalog/explore_indonesia/Artikel/Culture_and_Heritage/salah_paham_orang_indonesia-_ke_asing/1000xauto-wanita-indonesia.jpg",
         "phone": 987654321,
         "email": "jaja@miharja.com",
+        "desc":"Mebel atau furnitur adalah perlengkapan rumah yang mencakup semua barang seperti kursi, meja, dan lemari. Mebel berasal dari kata movable, yang artinya bisa bergerak. Pada zaman dahulu meja kursi dan lemari relatif mudah digerakkan dari batu besar, tembok, dan atap. Sedangkan kata furniture berasal dari bahasa Prancis fourniture (1520–30 Masehi). Fourniture mempunyai asal kata fournir yang artinya furnish atau perabot rumah atau ruangan. Walaupun mebel dan furniture punya arti yang beda, tetapi yang ditunjuk sama yaitu meja, kursi, lemari, dan seterusnya.Dalam kata lain, mebel atau furnitur adalah semua benda yang ada di rumah dan digunakan oleh penghuninya untuk duduk, berbaring, ataupun menyimpan benda kecil seperti pakaian atau cangkir. Mebel terbuat dari kayu, papan, kulit, sekrup, dll.",
         "location": "papua new guinea"
     },
     {
         "id_produk": 10,
-        "product_name": "KASUR EHEM,KALO GA TAU JANGAN DI GOOGLING",
+        "product_name": "KASUR NGANU,JANGAN DI GOOGLING",
         "price": 69696969696969,
         "image": "https://ecs7.tokopedia.net/img/product-1/2017/5/26/184809604/184809604_d0d1782e-f6a0-44e1-b808-f5eae5be4f8f_1024_755.jpg",
         "category_name": "furniture",
@@ -117,6 +127,7 @@ const data = [
         "seller_foto":"https://damniloveindonesia.com/image/catalog/explore_indonesia/Artikel/Culture_and_Heritage/salah_paham_orang_indonesia-_ke_asing/1000xauto-wanita-indonesia.jpg",
         "phone": 987654321,
         "email": "jaja@miharja.com",
+        "desc":"Pada zaman Neolitikum, manusia tidur hanya beralaskan tanah.[3] Kemudian berkembang untuk lebih berinovasi menggunakan alas dari dedaunan dan ranting pohon karena untuk menghindari kotoran, dan hama.[3][4] Seiring waktu berjalan, kulit binatang digunakan sebagai alas dan dijahit sebagai isinya untuk digunakan sebagai bantal.[3] Kemudian pada tahun 3600 SM tempat tidur yang terbuat dari goatskins diisi dengan air digunakan di Persia.[5] Setelah itu memasuki tahun 3400 SM Mesir tidur di dahan kelapa menumpuk di sudut-sudut rumah mereka.[5] Pada tahun 200 SM kasur di Roma Kuno terdiri dari tas kain diisi dengan rumput, jerami, atau wol.[5] Pada zaman Neolitikum, manusia tidur hanya beralaskan tanah.[3] Kemudian berkembang untuk lebih berinovasi menggunakan alas dari dedaunan dan ranting pohon karena untuk menghindari kotoran, dan hama.[3][4] Seiring waktu berjalan, kulit binatang digunakan sebagai alas dan dijahit sebagai isinya untuk digunakan sebagai bantal.[3] Kemudian pada tahun 3600 SM tempat tidur yang terbuat dari goatskins diisi dengan air digunakan di Persia.[5] Setelah itu memasuki tahun 3400 SM Mesir tidur di dahan kelapa menumpuk di sudut-sudut rumah mereka.[5] Pada tahun 200 SM kasur di Roma Kuno terdiri dari tas kain diisi dengan rumput, jerami, atau wol.[5]",
         "location": "hawai"
     },
     {
@@ -129,6 +140,7 @@ const data = [
         "seller_foto":"https://kampungrison.files.wordpress.com/2008/07/wp311.jpg",
         "phone": 696969696,
         "email": "alex@parto.com",
+        "desc":"Repairable parts are parts that are deemed worthy of repair, usually by virtue of economic consideration of their repair cost. Rather than bear the cost of completely replacing a finished product, repairables typically are designed to enable more affordable maintenance by being more modular. This allows components to be more easily removed, repaired, and replaced, enabling cheaper replacement. Spare parts that are needed to support condemnation of repairable parts are known as replenishment spares Repairable parts are parts that are deemed worthy of repair, usually by virtue of economic consideration of their repair cost. Rather than bear the cost of completely replacing a finished product, repairables typically are designed to enable more affordable maintenance by being more modular. This allows components to be more easily removed, repaired, and replaced, enabling cheaper replacement. Spare parts that are needed to support condemnation of repairable parts are known as replenishment spares .",
         "location": "lenteng agung"
     },
     {
@@ -141,6 +153,7 @@ const data = [
         "seller_foto":"https://quipper-video-wordpress.s3.amazonaws.com/images/2018/06/Mau-Hati-Lebih-Lega-Simak-6-Tips-Menjadi-Orang-Sabar.png",
         "phone": 123123123,
         "email": "tolong@bukain.com",
+        "desc":"Kebanyakan pusat kebugaran modern menawarkan berbagai kelas yang dibimbing oleh instruktur fitnes bersertifikat. banyak jenis kelas latihan berkelompok yang ditawarkan, tetapi kebanyakan berdasarkan senam aerobik, bersepeda (spin cycle), tinju atau beladiri, latihan intensitas tinggi, step, yoga, pilates, latihan otot, dan kelas bela diri lain seperti karate, Taekwondo, Krav Maga, dan Jiu-Jitsu Brasil. Klub kebugaran yang memiliki fasilitas kolam renang biasanya juga menawarkan kelas aerobik air. Instruktur umumnya harus memiliki sertifikat pendidikan olahraga agar dapat menjamin keselamatan peserta latihan.Kebanyakan pusat kebugaran modern menawarkan berbagai kelas yang dibimbing oleh instruktur fitnes bersertifikat. banyak jenis kelas latihan berkelompok yang ditawarkan, tetapi kebanyakan berdasarkan senam aerobik, bersepeda (spin cycle), tinju atau beladiri, latihan intensitas tinggi, step, yoga, pilates, latihan otot, dan kelas bela diri lain seperti karate, Taekwondo, Krav Maga, dan Jiu-Jitsu Brasil. Klub kebugaran yang memiliki fasilitas kolam renang biasanya juga menawarkan kelas aerobik air. Instruktur umumnya harus memiliki sertifikat pendidikan olahraga agar dapat menjamin keselamatan peserta latihan.",
         "location": "srilangka"
     },
     {
@@ -153,6 +166,7 @@ const data = [
         "seller_foto":"https://quipper-video-wordpress.s3.amazonaws.com/images/2018/06/Mau-Hati-Lebih-Lega-Simak-6-Tips-Menjadi-Orang-Sabar.png",
         "phone": 123123123,
         "email": "tolong@bukain.com",
+        "desc":" tidak goyang barbel melayang tidak goyang barbel melayang tidak goyang barbel melayang tidak goyang barbel melayang tidak goyang barbel melayang tidak goyang barbel melayang tidak goyang barbel melayang tidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayangtidak goyang barbel melayang",
         "location": "myanmar"
     },
     {
@@ -165,6 +179,7 @@ const data = [
         "seller_foto":"https://damniloveindonesia.com/image/catalog/explore_indonesia/Artikel/Culture_and_Heritage/salah_paham_orang_indonesia-_ke_asing/1000xauto-wanita-indonesia.jpg",
         "phone": 987654321,
         "email": "jaja@miharja.com",
+        "desc":"Kursi lipat merupakan salah satu contoh jenis kursi yang sudah cukup terkenal. Dinamakan kursi lipat karena kursi ini bisa dilipat saat tidak digunakan sehingga lebih praktis ketika disimpan. Berdasarkan strukturnya, kursi lipat bisa dibedakan menjadi 2 macam yakni kursi lipat meja dan kursi lipat tanpa meja. Masing-masing jenis kursi lipat ini mempunyai manfaat dan penggunaan yang berbeda-beda Kursi lipat merupakan salah satu contoh jenis kursi yang sudah cukup terkenal. Dinamakan kursi lipat karena kursi ini bisa dilipat saat tidak digunakan sehingga lebih praktis ketika disimpan. Berdasarkan strukturnya, kursi lipat bisa dibedakan menjadi 2 macam yakni kursi lipat meja dan kursi lipat tanpa meja. Masing-masing jenis kursi lipat ini mempunyai manfaat dan penggunaan yang berbeda-beda",
         "location": "papua new guinea"
     },
     {
@@ -177,6 +192,7 @@ const data = [
         "seller_foto": "https://damniloveindonesia.com/image/catalog/explore_indonesia/Artikel/Culture_and_Heritage/salah_paham_orang_indonesia-_ke_asing/1000xauto-wanita-indonesia.jpg",
         "phone": 987654321,
         "email": "jaja@miharja.com",
+        "desc":"Kasur yang terlalu tua atau mengalami kerusakan akan membuat kegiatan tidurmu menjadi tidak optimal dan mengganti kasur rusak adalah satu-satunya jalan keluar. Kerusakan yang terjadi karena usia kelapukan atau pun akibat lainnya biasa disebabkan karena kasur tidak mampu lagi menyangga tubuh orang-orang yang tidur di atasnya dengan cukup baik.Membiarkan kasur yang sudah terlalu tua atau rusak untuk tetap dipakai hanya akan membuat cedera di tubuhmu, terutama di bagian tulang belakang, sebab sudah tidak mampu menyangga tubuh secara optimal. Menurut National Sleep Foundation, kamu harus mengganti kasur agar kamu tidak mengalami masalah tidur dan harus dilakukan minimal lima tahun sekali Kasur yang terlalu tua atau mengalami kerusakan akan membuat kegiatan tidurmu menjadi tidak optimal dan mengganti kasur rusak adalah satu-satunya jalan keluar. Kerusakan yang terjadi karena usia kelapukan atau pun akibat lainnya biasa disebabkan karena kasur tidak mampu lagi menyangga tubuh orang-orang yang tidur di atasnya dengan cukup baik.Membiarkan kasur yang sudah terlalu tua atau rusak untuk tetap dipakai hanya akan membuat cedera di tubuhmu, terutama di bagian tulang belakang, sebab sudah tidak mampu menyangga tubuh secara optimal. Menurut National Sleep Foundation, kamu harus mengganti kasur agar kamu tidak mengalami masalah tidur dan harus dilakukan minimal lima tahun sekali..",
         "location": "hawai"
     },
 ]

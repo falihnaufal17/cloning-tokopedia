@@ -4,12 +4,15 @@ import './index.css'
 import dataCart from '../data/cart'
 import Navbar from '../component/header'
 import Home from '../component/Kontent'
+import { Input } from 'reactstrap';
 
 import { Link } from 'react-router-dom'
 import FooterBar from '../component/footernew';
 
-var subs = 0;
+let sutotal = 0, qty = 0, total = 0
+
 export default class CartList extends Component {
+
     constructor(props) {
         super(props)
 
@@ -64,7 +67,7 @@ export default class CartList extends Component {
         return (
             <div>
                 <Navbar />
-                <div class="container">
+                <div class="container " style={{ marginTop: '110px' }} >
                     <div class="row">
                         <div class="col-md-8">
                             <div class="card shadow-sm" style={{ width: "100%", height: "100%" }}>
@@ -80,23 +83,24 @@ export default class CartList extends Component {
                                             color: 'rgba(49,53,59,.44)'
                                         }}>Hapus</p>
                                     </Link>
+                                    <hr style={{ marginTop: '30px', border: '2px solid rgba(0,0,0,0.1)' }} />
                                     {this.state.data.map((item, key) => {
-                                        subs = item.price * this.state.qty
+                                        qty = item.qty
+                                        sutotal = item.price * this.state.qty
                                         return (
                                             <div class="card" style={{ width: "100%", height: "auto" }}>
                                                 <label class="checkbox">
-                                                    <h6>{item.product_name}<br></br>
-                                                        <span style={{ fontSize: "14px" }} class="font-weight-light text-secondary">{item.location}</span></h6>
+                                                    <h6 style={{ fontSize: '14px', fontWeight: 'bold', letterSpacing: '0.5px' }} >{item.product_name}<br />
+                                                        <span class="font-weight-light text-secondary">{item.location}</span></h6>
                                                     <input class="checkmark" type="checkbox" />
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="row">
                                                     <div class="col">
                                                         <label class="checkbox">
-                                                            <img src={item.image} style={{ width: "60px", height: "60px", float: "left" }} />
-                                                            <h6 style={{ textTransform: "uppercase", float: "left", paddingLeft: "15px" }}>{item.product_name}</h6>
-                                                            <br></br>
-                                                            <p class="font-weight-bold" style={{ color: "#fa591d", float: "left", paddingLeft: "15px", fontSize: "14px" }}>Rp. {Rupiah(item.price)}</p>
+                                                            <img src={item.image} style={{ width: "60px", float: "left", paddingRight: '10px' }} />
+                                                            <h6 style={{ textTransform: "uppercase", float: "inherit", width: '300px', fontSize: '14px', fontWeight: 'bold', letterSpacing: '1px' }}>{item.product_name}</h6>
+                                                            <p class="font-weight-bold" style={{ color: "#fa591d", float: "inherit", marginTop: '-10px', fontSize: "14px" }}>Rp. {Rupiah(item.price)}</p>
                                                             <input class="checkmark" type="checkbox" />
                                                             <span class="checkmark"></span>
                                                         </label>
@@ -142,7 +146,7 @@ export default class CartList extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p style={{ color: "#42b549", paddingLeft: "35px" }}>Tulis catatan untuk si penjual</p>
+                                                <Input style={{ color: "#42b549", paddingLeft: "35px", width: '500px' }} type="text" placeholder="Tulis catatan untuk si penjual" />
                                             </div>
                                         )
                                     }
@@ -155,9 +159,9 @@ export default class CartList extends Component {
                                 <div class="card-body">
                                     <h6 class="card-title">Ringkasan Belanja</h6>
                                     <hr></hr>
-                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp. {Rupiah(subs)}</span></p>
+                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.{Rupiah(sutotal)}</span></p>
                                     <hr></hr>
-                                    <button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button>
+                                    <Link to={'/transaction'}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button></Link>
                                     <Link to={'/'}>
                                         <div class="card shadow-sm m-auto" style={{ height: "20%", width: "100%", borderRadius: "10px" }}>
                                             <div class="card-body p-3">
@@ -173,9 +177,9 @@ export default class CartList extends Component {
 
 
                 </div>
-                <div style={{ marginTop: "200px" }}>
-                    <h1 style={{ marginLeft: "150px" }}>rekomendasi</h1>
-                    <Home />
+                <div style={{ marginTop: "50px" }}>
+                    <h4 style={{ marginLeft: "150px" }}>Rekomendasi</h4>
+                    <Home style={{ marginTop: '-90px' }} />
                 </div>
                 <div style={{ marginTop: "110px" }}>
                     <FooterBar />

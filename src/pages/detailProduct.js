@@ -8,6 +8,7 @@ import Ndas from '../component/header'
 import Ulasan from '../component/ulasan'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import dataCart from '../data/cart'
+import { Container, Row, Col, Input, Button } from 'reactstrap';
 
 var jml = 0, harga = 0, jumlah_total = 0
 var nama_produk, gambar, lokasi
@@ -213,17 +214,26 @@ export default class DetailProduct extends Component {
                                 </div>
 
                                 <div class="float-left mt-3">
-                                    <h6>Estimasi ongkos kirim</h6>
+                                    <h6 style={{ fontWeight: 'bold' }}>Estimasi ongkos kirim</h6>
 
-                                    <div class="row rounded text-secondary">
-                                        <div class="col border p-3">
+                                    <div class="row rounded text-secondary" style={{ marginLeft: '6px' }}>
+                                        <div class="col border" style={{ width: '300px', display: 'block' }}>
                                             <p style={{ fontSize: "12px" }}>Kecamatan</p>
+                                            <Input type="select" style={{ width: '150px', height: '35px', marginTop: '-10px', fontSize: '13px' }} >
+                                                <option>Mlati</option>
+                                                <option>Pogung Baru</option>
+                                            </Input>
                                         </div>
-                                        <div class="col border">
+                                        <div class="col border" style={{ width: '300px', display: 'block' }}>
                                             <p style={{ fontSize: "12px" }}>Kode Pos</p>
+                                            <Input type="select" style={{ width: '100px', height: '35px', marginTop: '-10px', fontSize: '13px' }} >
+                                                <option>55284</option>
+                                                <option>55295</option>
+                                            </Input>
                                         </div>
-                                        <div class="col border disabled">
+                                        <div class="col border disabled" style={{ display: 'block', backgroundColor: 'rgba(0,0,0,0.04)' }}>
                                             <p style={{ fontSize: "12px" }}>Berat</p>
+                                            <h6 style={{ fontSize: '15px', fontWeight: 'bold', color: 'grey' }}>550gr</h6>
                                         </div>
                                         <div class="col text-center text-danger">
                                             <p style={{ padding: 20, paddingLeft: 5, cursor: 'pointer' }}>Hitung</p>
@@ -231,20 +241,21 @@ export default class DetailProduct extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-1" style={{position:"absolute",marginLeft:"950px"}}>
+                            <div class="col-md-1" style={{ position: "absolute", marginLeft: "950px" }}>
                                 <img src="https://a.imge.to/2019/07/10/TDVm1.png"></img>
 
                             </div>
                         </div>
                     </div>
-                     <div style={{width:"920px" ,height:"900px"}}> 
-                        <Ulasan baranangsiang={dataById.product_name}/>
-                     </div>                       
+                    <div style={{ width: "920px", height: "800px", marginTop: '20px' }}>
+                        <Ulasan barang={dataById.product_name} desc={dataById.desc} />
+                    </div>
                     <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={this.rupiah(subTotal)} click={this.addToCart.bind(this)} />
                     <Modal gambar={dataById.image} productName={dataById.product_name} />
 
                 </div>
                 <Sikil />
+                <div style={{ marginTop: '30px' }} />
             </div>
 
         )
