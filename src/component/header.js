@@ -41,8 +41,7 @@ export default class Example extends React.Component {
           </section>
 
           <nav class="navbar navbar-expand-sm" style={{ verticalAlign: 'baseline' }} >
-            {/* src="https://a.imge.to/2019/07/09/TdHXH.jpg" */}
-            {/* http://1.bp.blogspot.com/-MYObb95pjRg/VpDg7UwhuFI/AAAAAAAABWw/ZO41qWK-Jgg/s1600/Logo-Tokopedia.jpg */}
+            
 
             <Link to={`/`}>
               <img class="logo" src="https://ecs7.tokopedia.net/microsite-production/brand-asset/dlc/logo/hires-tokopedia-logo.png" alt="Italian Trulli" />
