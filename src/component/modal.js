@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../data/kategori.js'
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { Link } from 'react-router-dom'
 
 import '../css/navbar.css';
 // import {Link} from 'react-router-dom';
@@ -21,29 +22,55 @@ export default class Example extends React.Component {
     });
   }
   render() {
+    const content = {
+      display: "flex",
+      textAlign: "left",
+      alignItems: "flex-start",
+      alignSelf: "flex-start",
+    }
+
+    const contentText = {
+      padding: "0 16px",
+      color: "rgba(0,0,0,.54)",
+      fontSize: "14px",
+      maxWidth: "335px",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+    }
+
+    const contentAction = {
+      marginLeft: "auto",
+    }
+
     return (
       <div>
-
         <div id="myModal" class="modal fade" role="dialog">
-          <div class={this.props.ukuran}>
-
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
-
-              <div class="modal-body">
-
-                <img src={this.props.gambar} ></img>
-                <h6>Rp. {this.props.hargaAwal}</h6>
-                <p>Qty: {this.props.qty}</p>
-                <p>Rp. {this.props.subTotal}</p>
-
-
+              <div class="modal-header">
+                <h5 class="text-center">Berhasil Ditambahkan</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
-
+              <div class="modal-body">
+                <div class="card shadow-sm m-auto" style={{ width: "100%", height: "auto" }}>
+                  <div class="card-body">
+                    <div style={content}>
+                      <img src={this.props.gambar} class="img-thumbnail" style={{ maxWidth: "60px" }} />
+                      <div style={contentText}>
+                        {this.props.productName}
+                      </div>
+                      <div style={contentAction}>
+                        <Link to={"/cartList"} onClick={() => this.setState({ isOpen: false })}>
+                          <button class="btn" style={{ backgroundColor: "#42b549", color: "white", border: "1px solid #42b549" }} data-dismiss="modal">Lihat Keranjang</button> {/* pake data-dismiss bisa tpi gak pindah */}
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
-
       </div>
     );
   }
