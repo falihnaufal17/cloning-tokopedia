@@ -27,8 +27,8 @@ export default class Home extends Component {
 
     render() {
         function text(text) {
-            if (text.length > 36) {
-                let textSplit = text.substr(0, 36)
+            if (text.length > 34) {
+                let textSplit = text.substr(0, 30)
                 return `${textSplit} ...`
             } else {
                 let textSplit = text
@@ -54,11 +54,12 @@ export default class Home extends Component {
         return (
             <div>
                 <Navbar />
-                <Container>
-                    <section>
-                        <Promo />
-                    </section>
-
+                <Container >
+                    <div style={{ marginTop: "100px" }}>
+                        <section>
+                            <Promo />
+                        </section>
+                    </div>
                     <section>
                         <Category />
                     </section>
@@ -78,7 +79,7 @@ export default class Home extends Component {
                                                         <CardImg className="ImgCard" top width="100%" src={product.image} alt="Card image cap" />
                                                         <div className="bodyCard">
                                                             <CardSubtitle className="title">{text(product.product_name)}</CardSubtitle>
-                                                            <CardSubtitle className="price">Rp {Rupiah(product.price)}</CardSubtitle>
+                                                            <CardSubtitle className="price">Rp.{Rupiah(product.price)}</CardSubtitle>
                                                             <CardText > <small className="text-muted">{product.location}</small></CardText>
                                                             <div style={{ color: 'gold', marginTop: '-18px' }}>
                                                                 <span class="fa fa-star adjuctStart"></span>

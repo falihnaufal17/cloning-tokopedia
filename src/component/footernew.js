@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 export default class Footer extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{ marginLeft: '-30px', marginRight: '-30px' }}>
                 <div style={{ boxShadow: '-0.5px -0.1px 5px rgba(0, 0, 0, 0.2)', marginTop: '3em' }}>
                     <Container>
                         <Row>
@@ -69,6 +69,7 @@ export default class Footer extends React.Component {
                         </Row>
                     </Container>
                 </div>
+                <hr style={{ border: 'none' }} />
                 <img style={{ width: '100%' }} src="https://a.imge.to/2019/07/11/cZsGw.png"></img>
             </div>
         );

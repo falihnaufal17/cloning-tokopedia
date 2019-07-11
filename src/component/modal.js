@@ -60,8 +60,8 @@ export default class Example extends React.Component {
                         {this.props.productName}
                       </div>
                       <div style={contentAction}>
-                        <Link to={"/cartList"} onClick={() => this.setState({ isOpen: false })}>
-                          <button class="btn" style={{ backgroundColor: "#42b549", color: "white", border: "1px solid #42b549" }} data-dismiss="modal">Lihat Keranjang</button> {/* pake data-dismiss bisa tpi gak pindah */}
+                        <Link to={'/cartList'}>
+                          <button class="btn" onClick={() => this.setState({ isOpen: false })} style={{ backgroundColor: "#42b549", color: "white", border: "1px solid #42b549" }} data-dismiss="modal">Lihat Keranjang</button> {/* pake data-dismiss bisa tpi gak pindah */}
                         </Link>
                       </div>
                     </div>
