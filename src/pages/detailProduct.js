@@ -114,20 +114,24 @@ export default class DetailProduct extends Component {
                                 <div style={{ float: "left" }}>
                                     <h6 class=" font-weight-bolder">Jumlah</h6>
                                     <button
-                                        class="btn btn-primary rounded-circle btn-md text-primary"
+                                        class="btn btn-sm"
                                         style={{ backgroundColor: 'transparent', color: 'black' }}
                                         disabled={this.state.qty < 2}
-                                        onClick={this.substract}>--</button>
+                                        onClick={this.substract}>
+                                        <img src={"http://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-min-active.png"} style={{ width: "25px", height: "25px" }} />
+                                    </button>
                                     <input type="text" class="text-center" value={this.state.qty} style={{
                                         borderColor: 'transparent',
                                         borderBottomWidth: 2,
                                         borderBottomColor: 'green',
-                                        width: '30%'
+                                        width: '15%'
                                     }} />
                                     <button
-                                        class="btn btn-success rounded-circle btn-md text-success"
+                                        class="btn btn-sm"
                                         style={{ backgroundColor: 'transparent', color: 'black' }}
-                                        onClick={this.add}>+</button>
+                                        onClick={this.add}>
+                                        <img src={"http://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-plus-active.png"} style={{ width: "25px", height: "25px" }} />
+                                    </button>
                                 </div>
                                 <div style={{ float: "right" }}>
                                     <h6 class=" font-weight-bolder">Catatan untuk penjual (opsional)</h6>

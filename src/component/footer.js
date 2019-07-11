@@ -60,7 +60,7 @@ export default class Example extends React.Component {
             <form class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav float-right">
                 <li class="nav-item">
-                  <a class="nav-link" href="javascript:void(0)">RP {this.props.subTotal}</a>
+                  <a class="nav-link" href="javascript:void(0)">{this.props.subTotal}</a>
                 </li>
 
               </ul>
