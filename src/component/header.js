@@ -41,7 +41,7 @@ export default class Example extends React.Component {
           </section>
 
           <nav class="navbar navbar-expand-sm" style={{ verticalAlign: 'baseline' }} >
-            
+
 
             <Link to={`/`}>
               <img class="logo" src="https://ecs7.tokopedia.net/microsite-production/brand-asset/dlc/logo/hires-tokopedia-logo.png" alt="Italian Trulli" />
