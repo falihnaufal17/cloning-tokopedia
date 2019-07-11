@@ -182,7 +182,7 @@ export default class DetailProduct extends Component {
                             </div>
 
                             <div class="float-left mt-3">
-                                <h6>Estimasi ongkos kirim</h6>
+                                <h6>Estimasi ongkos kisssrim</h6>
 
                                 <div class="row rounded text-secondary">
                                     <div class="col border p-3">
