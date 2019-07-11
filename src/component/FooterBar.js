@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
+import {
+  Container, Row, Col, Card, CardImg, CardText, CardSubtitle
+} from 'reactstrap';
 import '../App.css';
+
 class FooterBar extends Component {
   render() {
     return (
-      <div style={{marginTop:"50px"}} class="container-fluid">
-				<div class="row">
-				
-				<img style={{width:"98%"}} src="https://a.imge.to/2019/07/10/T9JQT.png"></img>
-					<img src="https://a.imge.to/2019/07/10/T96pi.png"></img>
-				</div>
-			</div>
-        
+
+      <div style={{ marginTop: "50px", width: '90%' }} class="container-fluid">
+        <div class="row">
+
+          <img style={{ width: '100%' }} src="https://a.imge.to/2019/07/10/T9JQT.png"></img>
+          <img style={{ width: '100%' }} src="https://a.imge.to/2019/07/11/cZsGw.png"></img>
+        </div>
+      </div>
+
     );
   }
 }
-                    
+
 
 
 export default FooterBar;

@@ -26,12 +26,12 @@ export default class Example extends React.Component {
       <div>
 
         <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-bottom" >
-            <a class="navbar-brand" href="javascript:void(0)">
-              <img class="fotofooter img-rounded"  src={this.props.gambar} alt="Italian Trulli" /></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
+          <a class="navbar-brand" href="#">
+            <img class="fotofooter img-rounded" src={this.props.gambar} alt="Italian Trulli" /></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
 
           <div class="collapse navbar-collapse" id="navb">
             <ul class="navbar-nav mr-auto">
@@ -69,7 +69,7 @@ export default class Example extends React.Component {
                 </button>
 
               <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
-                tambah kekeranjang
+                tambah ke keranjang
                 </button>
             </form>
           </div>
