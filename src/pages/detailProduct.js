@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import '../css/navbar.css';
+import '../css/tab.css';
 import dummy from '../data/produk'
 import Kaki from '../component/footer'
-import Sikil from '../component/FooterBar'
+import Sikil from '../component/footernew'
 import Modal from '../component/modal'
 import Ndas from '../component/header'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -94,7 +94,10 @@ export default class DetailProduct extends Component {
             <div>
             <Ndas/>
             <div class="container">
-                <div key={dataById.id_produk} style={{ marginTop: "100px" }}>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+
+           
+                <div key={dataById.id_produk} style={{ marginTop: "100px",marginBottom:"80px" }}>
                     <nav aria-label="breadcrumb" style={{ fontSize: '15px' }}>
                         <ol class="breadcrumb bg-transparent">
                             <li class="breadcrumb-item"><a href="#">Beranda</a></li>
@@ -206,19 +209,103 @@ export default class DetailProduct extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-1 ">
+                        <div class="col-md-12 " style={{position:"absolute",marginLeft:"950px"}}> 
                                 <img src="https://a.imge.to/2019/07/10/TDVm1.png"></img>
-
                         </div>
                     </div>
                 </div>
+
+                 <div  style={{ marginBottom: "300px" ,width:"850px" }}>                          
+                    <div class="tabset">
+                        <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked></input>
+                        <label for="tab1">informasi produk</label>
+
+                        <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier"></input>
+                        <label for="tab2">Ulasan</label>
+
+                        <input type="radio" name="tabset" id="tab3" aria-controls="dunkles"></input>
+                        <label for="tab3">Diskusi Produk</label>
+                    
+                    <div class="tab-panels" style={{marginTop:"40px"}}>
+                        <section id="marzen" class="tab-panel">
+                        <h5>Lens Defense </h5>
+                        <p>Auto Focus Crystal melindungi bagian lensa kamera dengan bingkai yang lebih menonjol.</p>
+                        <h5>Flexible Grips</h5>
+                        <p>Bahan TPU dari Liquid Crystal sangat flexible dan presisi pada gadget.</p>
+                        <h5>Embosed Buttons</h5>
+                        <p>Tombol pada Liquid Crystal dapat berfungsi dengan baik dan mudah digunakan.</p>
+                        <p></p>
+
+
+
+
+
+Details :
+- Bahan TPU + Acrylic
+- Fleksibel dan Presisi
+- Jernih dan Transparan
+
+Tersedia warna :
+
+A50 dan A70 : Hitam, Biru, Silver
+A20 dan A30 : Hitam, Biru, Silver, Gold, Merah
+A10 : KOSONG
+
+Fast Response, Pengiriman 1 x 24 jam Pemesanan, thanks :)
+                        
+                    </section>
+                        <section id="rauchbier" class="tab-panel">
+                        <h2>Ulasan</h2>
+                        <p><strong>Overall Impression:</strong>  characteristic.</p>
+                        <p><strong>History:</strong> asd.</p>
+                        </section>
+
+                        <section id="dunkles" class="tab-panel">
+                        <div class="card">
+                        <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text. Some example text.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="card">
+                        <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text. Some example text.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="card">
+                        <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text. Some example text.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                                    
+                        
+                        </section>
+                    </div>
+                    </div> 
+                    </div>
+
+
+  
                 
                 <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={this.rupiah(subTotal)} click={this.addToCart.bind(this)} />
                 <Modal gambar={dataById.image} qty={this.state.qty} subTotal={subTotal} hargaAwal={dataById.price} />
                                    
             </div>
-            <Sikil/>
+           
+                <Sikil/>
             </div>
+            
+           
             
         )
     }
