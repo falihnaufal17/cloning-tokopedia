@@ -4,11 +4,7 @@ import data from '../data/kategori.js'
 import '../css/navbar.css';
 import '../css/index.css'
 import { Link } from 'react-router-dom';
-import Trolli from '../assets/trolli.png';
 import Modal from './modalLogin';
-
-
-// import {Link} from 'react-router-dom';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -76,7 +72,7 @@ export default class Example extends React.Component {
 
                     <ul class="navbar-nav float-right">
                       <li class="nav-item" >
-                        <a class="nav-link" style={{ color: 'grey' }}  data-toggle="modal" data-target="#elegantModalForm">Masuk</a>
+                        <a class="nav-link" style={{ color: 'grey' }} data-toggle="modal" data-target="#elegantModalForm">Masuk</a>
                       </li>
                       <li class="nav-item">
                         <Link to={"/daftar"} Component={"component"}> <button type="button" class="btn btn-outline-success">Daftar</button></Link>
