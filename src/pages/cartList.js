@@ -7,8 +7,9 @@ import Home from '../component/Kontent'
 
 import { Link } from 'react-router-dom'
 import FooterBar from '../component/footernew';
-export default class CartList extends Component {
 
+var subs = 0;
+export default class CartList extends Component {
     constructor(props) {
         super(props)
 
@@ -80,6 +81,7 @@ export default class CartList extends Component {
                                         }}>Hapus</p>
                                     </Link>
                                     {this.state.data.map((item, key) => {
+                                        subs = item.price * this.state.qty
                                         return (
                                             <div class="card" style={{ width: "100%", height: "auto" }}>
                                                 <label class="checkbox">
@@ -94,7 +96,7 @@ export default class CartList extends Component {
                                                             <img src={item.image} style={{ width: "60px", height: "60px", float: "left" }} />
                                                             <h6 style={{ textTransform: "uppercase", float: "left", paddingLeft: "15px" }}>{item.product_name}</h6>
                                                             <br></br>
-                                                            <p class="font-weight-bold" style={{ color: "#fa591d", float: "left", paddingLeft: "15px", fontSize: "14px" }}>Rp. {item.price}</p>
+                                                            <p class="font-weight-bold" style={{ color: "#fa591d", float: "left", paddingLeft: "15px", fontSize: "14px" }}>Rp. {Rupiah(item.price)}</p>
                                                             <input class="checkmark" type="checkbox" />
                                                             <span class="checkmark"></span>
                                                         </label>
@@ -153,9 +155,9 @@ export default class CartList extends Component {
                                 <div class="card-body">
                                     <h6 class="card-title">Ringkasan Belanja</h6>
                                     <hr></hr>
-                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.</span></p>
+                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp. {Rupiah(subs)}</span></p>
                                     <hr></hr>
-                                    <Link to={'/transaction'}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button></Link>
+                                    <button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button>
                                     <Link to={'/'}>
                                         <div class="card shadow-sm m-auto" style={{ height: "20%", width: "100%", borderRadius: "10px" }}>
                                             <div class="card-body p-3">
@@ -172,7 +174,7 @@ export default class CartList extends Component {
 
                 </div>
                 <div style={{ marginTop: "200px" }}>
-                    <h1 style={{ marginLeft: "150px" }}>Rekomendasi</h1>
+                    <h4 style={{ marginLeft: "150px" }}>Rekomendasi</h4>
                     <Home />
                 </div>
                 <div style={{ marginTop: "110px" }}>

@@ -1,19 +1,30 @@
 import React, { Component } from 'react'
 import '../css/navbar.css';
 import dummy from '../data/produk'
-import footer from '../component/footernew'
+import Kaki from '../component/footer'
+import Footer from '../component/footernew'
 import Modal from '../component/modal'
 import Ndas from '../component/header'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Footer from '../component/footernew';
+import dataCart from '../data/cart'
+
+var jml = 0, harga = 0, jumlah_total = 0
+var nama_produk, gambar, lokasi
+
 export default class DetailProduct extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
             data: dummy,
-            cart: [],
+            cart: dataCart,
             qty: 1,
+            product_name: '',
+            price: 0,
+            image: '',
+            location: '',
+            sub_total: 0
+
         }
 
         this.add = this.add.bind(this)
@@ -41,7 +52,12 @@ export default class DetailProduct extends Component {
 
     addToCart() {
         this.state.cart.push({
+            'product_name': nama_produk,
+            'price': harga,
             'qty': this.state.qty,
+            'sub_total': jumlah_total,
+            'image': gambar,
+            'location': lokasi
         })
         console.log("Add to cart success", this.state.cart)
     }
@@ -56,6 +72,15 @@ export default class DetailProduct extends Component {
         let getId = Number(this.props.match.params.id_product)
         let dataById = dummy.find((item => item.id_produk === getId))
         let subTotal = dataById.price * this.state.qty
+
+        //assignment
+        nama_produk = dataById.product_name
+        gambar = dataById.image
+        lokasi = dataById.location
+        harga = dataById.price
+        jumlah_total = subTotal
+
+        console.log(dataById.price)
         const flexContainer = {
             display: "flex",
             flexWrap: "wrap",
@@ -211,7 +236,9 @@ export default class DetailProduct extends Component {
                             </div>
                         </div>
                     </div>
-                    <Modal gambar={dataById.image} qty={this.state.qty} subTotal={subTotal} hargaAwal={dataById.price} />
+
+                    <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={this.rupiah(subTotal)} click={this.addToCart.bind(this)} />
+                    <Modal gambar={dataById.image} productName={dataById.product_name} />
 
                 </div>
                 <Footer />
