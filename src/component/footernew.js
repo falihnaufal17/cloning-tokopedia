@@ -72,6 +72,7 @@ export default class Footer extends React.Component {
             </Container>
             <hr style={{height:"1px",border:"none",color:"#333",backgroundColor:"#333"}} ></hr>
             <img style={{ width: '100%' }} src="https://a.imge.to/2019/07/11/cZsGw.png"></img>
+            <div style={{marginBottom:"60px"}}></div>
         </div>
         );
     }
