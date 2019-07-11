@@ -27,7 +27,7 @@ export default class Example extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ marginBottom: "100px" }}>
         <div class="fixed-top" style={{ backgroundColor: 'white' }}>
           <section style={{ width: '100%' }}>
             <a href="https://www.tokopedia.com/mobile-apps/"><p className="headerTopLeft">Download Tokopedia App</p></a>
