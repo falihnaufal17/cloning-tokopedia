@@ -60,11 +60,12 @@ export default class Home extends Component {
         return (
             <div>
                 <Navbar />
-                <Container style={{ marginTop: "100px" }}>
+                <Container >
+                <div style={{ marginTop: "100px" }}>
                     <section>
                         <Promo />
                     </section>
-
+                    </div>
                     <section>
                         <Category />
                     </section>

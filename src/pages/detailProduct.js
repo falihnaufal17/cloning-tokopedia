@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import '../css/navbar.css';
 import dummy from '../data/produk'
 import Kaki from '../component/footer'
-import Sikil from '../component/FooterBar'
+import Sikil from '../component/footernew'
 import Modal from '../component/modal'
 import Ndas from '../component/header'
+import Ulasan from '../component/ulasan'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import dataCart from '../data/cart'
 
@@ -230,13 +231,15 @@ export default class DetailProduct extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-1 ">
+                            <div class="col-md-1" style={{position:"absolute",marginLeft:"950px"}}>
                                 <img src="https://a.imge.to/2019/07/10/TDVm1.png"></img>
 
                             </div>
                         </div>
                     </div>
-
+                     <div style={{width:"920px" ,height:"900px"}}> 
+                        <Ulasan/>
+                     </div>                       
                     <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={this.rupiah(subTotal)} click={this.addToCart.bind(this)} />
                     <Modal gambar={dataById.image} productName={dataById.product_name} />
 
