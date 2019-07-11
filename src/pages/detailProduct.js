@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 
+import '../css/navbar.css';
 import dummy from '../data/produk'
-import Navbar from '../component/header'
 import Kaki from '../component/footer'
+import Sikil from '../component/FooterBar'
 import Modal from '../component/modal'
+import Ndas from '../component/header'
 import 'bootstrap/dist/css/bootstrap.min.css'
 export default class DetailProduct extends Component {
     constructor(props) {
@@ -36,6 +38,13 @@ export default class DetailProduct extends Component {
             'qty': this.state.qty,
         })
         console.log("Add to cart success", this.state.cart)
+    }
+     rupiah(angka)
+    {
+	var rupiah = '';		
+	var angkarev = angka.toString().split('').reverse().join('');
+	for(var i = 0; i < angkarev.length; i++) if(i%3 === 0) rupiah += angkarev.substr(i,3)+'.';
+	return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
     }
 
     render() {
@@ -76,7 +85,9 @@ export default class DetailProduct extends Component {
         }
 
         return (
-            <div class=" container">
+            <div>
+            <Ndas/>
+            <div class="container">
                 <div key={dataById.id_produk} style={{ marginTop: "100px" }}>
                     <nav aria-label="breadcrumb" style={{ fontSize: '15px' }}>
                         <ol class="breadcrumb bg-transparent">
@@ -98,7 +109,7 @@ export default class DetailProduct extends Component {
                                     class="btn btn-light btn-sm"
                                     style={{ float: "right", backgroundColor: 'transparent', color: 'black', borderWidth: '2px' }} ><i class=" fa fa-share-alt fa-1x"></i>  Bagikan</button>
                             </div>
-                            <h4 class=" font-weight-bolder mt-2" style={{ color: "#ff5722" }}>Rp. {dataById.price}</h4>
+                            <h4 class=" font-weight-bolder mt-2" style={{ color: "#ff5722" }}> {this.rupiah(dataById.price)}</h4>
                             <div class="mt-3">
                                 <div style={{ float: "left" }}>
                                     <h6 class=" font-weight-bolder">Jumlah</h6>
@@ -185,11 +196,19 @@ export default class DetailProduct extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-1 ">
+                                <img src="https://a.imge.to/2019/07/10/TDVm1.png"></img>
+
+                            </div>
                     </div>
                 </div>
-                <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={subTotal} click={this.addToCart.bind(this)} />
+                <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={this.rupiah(subTotal)} click={this.addToCart.bind(this)} />
                 <Modal gambar={dataById.image} qty={this.state.qty} subTotal={subTotal} hargaAwal={dataById.price} />
+                                   
             </div>
+            <Sikil/>
+            </div>
+            
         )
     }
 }
