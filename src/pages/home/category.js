@@ -51,7 +51,7 @@ export default class category extends Component {
                                 <Col>
                                     <Col>
                                         <p style={{ fontSize: '13px', marginTop: '-10px', position: 'absolute' }}>Nomor Telepon</p>
-                                        <Input style={{ width: '160px', height: '35px', marginTop: '15px', fontSize: '13px' }} placeholder="08123456789" />
+                                        <Input type="number" style={{ width: '160px', height: '35px', marginTop: '15px', fontSize: '13px' }} placeholder="08123456789" />
                                     </Col>
                                     <Col style={{ marginLeft: '-120px' }}>
                                         <p style={{ fontSize: '13px', marginTop: '-10px', position: 'absolute' }}>Nominal</p>
