@@ -7,6 +7,10 @@ import Modal from '../component/modal'
 import Ndas from '../component/header'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import dataCart from '../data/cart'
+
+var jml = 0, harga = 0, jumlah_total = 0
+var nama_produk, gambar, lokasi
+
 export default class DetailProduct extends Component {
     constructor(props) {
         super(props)
@@ -55,10 +59,6 @@ export default class DetailProduct extends Component {
             'image': this.state.image,
             'location': this.state.location
         })
-
-        this.setState({
-
-        })
         console.log("Add to cart success", this.state.cart)
     }
     rupiah(angka) {
@@ -72,6 +72,15 @@ export default class DetailProduct extends Component {
         let getId = Number(this.props.match.params.id_product)
         let dataById = dummy.find((item => item.id_produk === getId))
         let subTotal = dataById.price * this.state.qty
+
+        //assignment
+        nama_produk = dataById.product_name
+        gambar = dataById.image
+        lokasi = dataById.location
+        harga = dataById.price
+        jumlah_total = subTotal
+
+        console.log(dataById.price)
         const flexContainer = {
             display: "flex",
             flexWrap: "wrap",
