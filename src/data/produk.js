@@ -119,8 +119,8 @@ const data = [
     },
     {
         "id_produk": 10,
-        "product_name": "KASUR NGANU,JANGAN DI GOOGLING",
-        "price": 69696969696969,
+        "product_name": "KASUR & KURSI",
+        "price": 3599000,
         "image": "https://ecs7.tokopedia.net/img/product-1/2017/5/26/184809604/184809604_d0d1782e-f6a0-44e1-b808-f5eae5be4f8f_1024_755.jpg",
         "category_name": "furniture",
         "seller_name": "tante mirna si penjual furniture",
