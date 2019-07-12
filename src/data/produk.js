@@ -68,7 +68,7 @@ const data = [
     {
         "id_produk": 6,
         "product_name": "AVANZA GRANDMAX CICILAN 36X ,6 TAHUN",
-        "price": 222222,
+        "price": 350990000,
         "image": "https://ik.imagekit.io/hj8sm3kk7/large/gallery/color/38/1654/toyota-avanza-2019-color-463819.jpg",
         "category_name": "otomotif",
         "seller_name": "alexander parto si penjual otomotif",
