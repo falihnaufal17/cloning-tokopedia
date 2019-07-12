@@ -36,7 +36,7 @@ export default class Example extends React.Component {
             </ul>
           </section>
 
-          <nav class="navbar navbar-expand-sm" style={{ verticalAlign: 'baseline' }} >
+          <nav class="navbar navbar-expand-sm" style={{ justifyContent: 'center'}} >
 
 
             <Link to={`/`}>
