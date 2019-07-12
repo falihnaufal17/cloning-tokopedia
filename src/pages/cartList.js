@@ -9,7 +9,7 @@ import { Input } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import FooterBar from '../component/footernew';
 
-let sutotal = 0, qty = 0, total = 0
+let sutotal = 0, qty = 1, total = 0
 let id = 0;
 
 export default class CartList extends Component {
