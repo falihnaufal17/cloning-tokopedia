@@ -51,7 +51,7 @@ export default class Example extends React.Component {
                 </p>
               </div>
               <div class="form-inline my-2 ml-5 my-lg-0">
-                <button type="button" class=" btn btn-success btn-" data-toggle="modal" data-target="#myModal">
+                <button type="button" class=" btn btn-success btn-" data-toggle="modal">
                   follow
                 </button>
               </div>
@@ -64,14 +64,15 @@ export default class Example extends React.Component {
                 </li>
 
               </ul>
-              <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal" style={{ marginRight: 20 }}>
-                beli
+
+              <button type="button" class="btn btn-outline-warning" data-toggle="modal" style={{ marginRight: 20 }}>
+                <Link to={`/cartList`} onClick={this.props.click} style={{ color: '#000' }}>beli</Link>
+              </button>
+
+
+              <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+                tambah ke keranjang
                 </button>
-              <Link to={`/detailProduct/${this.props.id_product}`}>
-                <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
-                  tambah ke keranjang
-                </button>
-              </Link>
             </form>
           </div>
         </nav >

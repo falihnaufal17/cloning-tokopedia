@@ -120,7 +120,7 @@ export default class CartList extends Component {
                                 <div class="card-body">
                                     <label class="checkbox float-left">
                                         <span style={{ fontSize: '15px' }}>Pilih semua produk</span>
-                                        <input type="checkbox" class="form-check-inline form-check-label checkmark" style={{ borderRadius: '10px' }} checked="checked" />
+                                        <input type="checkbox" class="form-check-inline form-check-label checkmark" style={{ borderRadius: '10px' }} />
                                         <span class="checkmark"></span>
                                     </label>
                                     <p style={{
@@ -139,7 +139,7 @@ export default class CartList extends Component {
                                                 <label class="checkbox">
                                                     <h6 style={{ fontSize: '14px', fontWeight: 'bold', letterSpacing: '0.5px' }} >{item.product_name}<br />
                                                         <span class="font-weight-light text-secondary">{item.location}</span></h6>
-                                                    <input class="checkmark" type="checkbox" checked="checked" />
+                                                    <input class="checkmark" type="checkbox" />
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <div class="row">
@@ -148,7 +148,7 @@ export default class CartList extends Component {
                                                             <img src={item.image} style={{ width: "60px", float: "left", paddingRight: '10px' }} />
                                                             <h6 style={{ textTransform: "uppercase", float: "inherit", width: '300px', fontSize: '14px', fontWeight: 'bold', letterSpacing: '1px' }}>{item.product_name}</h6>
                                                             <p class="font-weight-bold" style={{ color: "#fa591d", float: "inherit", marginTop: '-10px', fontSize: "14px" }}>Rp. {Rupiah(item.price)}</p>
-                                                            <input class="checkmark" type="checkbox" checked="checked" />
+                                                            <input class="checkmark" type="checkbox" />
                                                             <span class="checkmark"></span>
                                                         </label>
                                                     </div>
