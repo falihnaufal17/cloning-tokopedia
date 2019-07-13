@@ -10,8 +10,10 @@ this website cloning from https://www.tokopedia.com
    ```
 2. Install all depedencies on the package.json
    ```
-   $ cd cloning-tokopedia 
-   $ npm intall
+      cd cloning-tokopedia 
+      npm install
+      npm install --save react-web-tabs
+
    ```
 3. Run Tokopedia
    ```
