@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Input, Button } from 'reactstrap';
+import { Row, Col, Input, Button } from 'reactstrap';
+import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
+import 'react-web-tabs/dist/react-web-tabs.css';
 
 import './index.css'
+
 
 export default class category extends Component {
     render() {
@@ -37,34 +40,76 @@ export default class category extends Component {
                             </Col>
                         </Row>
                     </Col>
-                    <Col xs="6">
+                    <Col xs="6" style={{ border: `7px` }}>
                         <h5 style={{ float: 'left' }}>Top Up & Tagihan</h5>
                         <h6 style={{ float: 'right', color: 'green' }}>Lihat Semua</h6>
-                        <Col style={{ width: '100%', border: '0.5px solid rgb(204, 204, 204, 0.5)', height: '130px', borderRadius: '5px', marginTop: '40px' }}>
-                            <Row>
-                                <Col style={{ width: '100%', height: '35px', borderBottom: '1px solid rgb(204, 204, 204, 0.5)', verticalAlign: 'center', paddingTop: '5px', fontSize: '14px' }}>
-                                    <Col style={{ borderBottom: '2px solid green' }}>Pulsa</Col>
-                                    <Col>Paket Data</Col>
-                                    <Col> Listrik PLN</Col>
-                                    <Col>Flight</Col>
-                                </Col>
-                                <Col>
-                                    <Col>
-                                        <p style={{ fontSize: '13px', marginTop: '-10px', position: 'absolute' }}>Nomor Telepon</p>
-                                        <Input type="number" style={{ width: '160px', height: '35px', marginTop: '15px', fontSize: '13px' }} placeholder="08123456789" />
-                                    </Col>
-                                    <Col style={{ marginLeft: '-120px' }}>
-                                        <p style={{ fontSize: '13px', marginTop: '-10px', position: 'absolute' }}>Nominal</p>
-                                        <Input type="select" style={{ width: '160px', height: '35px', marginTop: '15px', fontSize: '13px' }} >
-                                            <option>Rp. 10.000</option>
-                                            <option>Rp. 25.000</option>
-                                            <option>Rp. 50.000</option>
-                                            <option>Rp. 100.000</option>
-                                        </Input>
-                                        <Button color="success" style={{ width: '80px', height: '35px', marginTop: '15px', marginLeft: '10px' }}>Beli</Button>
-                                    </Col>
-                                </Col>
-                            </Row>
+                        <Col style={{ width: '100%', border: '1px solid rgb(204, 204, 204, 0.5)', height: '130px', borderRadius: '5px', marginTop: '40px' }}>
+                            <Tabs defaultTab="one" onChange={(tabId) => { console.log(tabId) }} >
+                                <TabList>
+                                    <Tab tabFor="one">Pulsa</Tab>
+                                    <Tab tabFor="two">Paket Data</Tab>
+                                    <Tab tabFor="three">Listrik</Tab>
+                                    <Tab tabFor="fourth">Flight</Tab>
+                                </TabList>
+                                <TabPanel tabId="one">
+                                    <Row>
+                                        <p class=" col-md-4 mt-1" style={{ fontSize: '14px' }}>Nomer HP</p>
+                                        <p class=" col-md-6 mt-1" style={{ fontSize: '14px' }} > Jumlah pulsa</p>
+                                    </Row>
+                                    <form style={{ marginTop: '-20px', justifyContent: "left" }} class="form-inline" action="/action_page.php">
+                                        <input type="number" class="form-control mr-sm-2 col-md-4" style={{ height: '35px' }} />
+                                        <select class="form-control mr-sm-2 col-md-5" placeholder="jumlah pulsa" id="sel1" style={{ height: '35px', fontSize: '13px' }} >
+                                            <option>10.000</option>
+                                            <option>20.000</option>
+                                            <option>30.000</option>
+                                            <option>40.000</option>
+                                        </select>
+                                        <button class="btn btn-success col-md-2" type="submit" style={{ height: '35px' }} >Beli</button>
+                                    </form>
+                                </TabPanel>
+                                <TabPanel tabId="two">
+                                    <Row>
+                                        <p class=" col-md-4 mt-1" style={{ fontSize: '14px' }}>Nomer HP</p>
+                                        <p class=" col-md-6 mt-1" style={{ fontSize: '14px' }}>Jumlah Kuota   </p>
+                                    </Row>
+                                    <form style={{ marginTop: '-20px' }} class="form-inline" action="/action_page.php">
+                                        <input type="number" class="form-control mr-sm-2 col-md-4" style={{ height: '35px' }} />
+                                        <select class="form-control mr-sm-2 col-md-5" placeholder="jumlah pulsa" id="sel1" style={{ height: '35px', fontSize: '13px' }}>
+                                            <option>1 GB</option>
+                                            <option>2 GB</option>
+                                            <option>4 GB</option>
+                                            <option>8 GB</option>
+                                        </select>
+                                        <button class="btn btn-success col-md-2" type="submit">Beli</button>
+                                    </form>
+                                </TabPanel>
+                                <TabPanel tabId="three">
+                                    <Row>
+                                        <p class=" col-md-3 mt-1" style={{ fontSize: '14px' }}>ID Listrik</p>
+                                        <p class=" col-md-3 mt-1" style={{ fontSize: '14px' }}>Jenis KwH</p>
+                                        <p class=" col-md-3 mt-1" style={{ fontSize: '14px' }}>Nominal</p>
+                                    </Row>
+                                    <form style={{ marginTop: '-20px', justifyContent: "center" }} class="form-inline" action="/action_page.php">
+                                        <input type="text" class="form-control mr-sm-2 col-md-3" style={{ height: '35px' }} />
+                                        <select class="form-control mr-sm-2 col-md-3" placeholder="jumlah pulsa" id="sel1" style={{ height: '35px', fontSize: '13px' }}>
+                                            <option>3123</option>
+                                            <option>22</option>
+                                            <option>88</option>
+                                            <option>642</option>
+                                        </select>
+                                        <select class="form-control mr-sm-2 col-md-3" placeholder="jumlah pulsa" id="sel1" style={{ height: '35px', fontSize: '13px' }}>
+                                            <option>10.000</option>
+                                            <option>20.000</option>
+                                            <option>30.000</option>
+                                            <option>40.000</option>
+                                        </select>
+                                        <button class="btn btn-success col-md-2" type="submit" style={{ height: '35px' }} >Beli</button>
+                                    </form>
+                                </TabPanel>
+                                <TabPanel tabId="fourth">
+                                    <h1><i class="fas fa-plane"></i><i class="far fa-building"></i><i class="far fa-building"></i></h1>
+                                </TabPanel>
+                            </Tabs>
                         </Col>
                     </Col>
 

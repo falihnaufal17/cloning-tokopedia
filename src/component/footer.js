@@ -20,6 +20,10 @@ export default class Example extends React.Component {
     });
   }
 
+  restart() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     // let dataById = dummy.find((item => item.id_produk === getId))
     return (
