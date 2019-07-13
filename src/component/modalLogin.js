@@ -1,7 +1,6 @@
 import React from 'react';
 import data from '../data/kategori.js'
-import Swal from 'sweetalert2'
-
+import Swal from 'sweetalert2';
 
 import '../css/modal.css';
 // import {Link} from 'react-router-dom';
@@ -43,7 +42,7 @@ export default class Example extends React.Component {
                         <div class="modal-content form-elegant">
 
                             <div class="modal-header text-center">
-                                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Daftar</strong></h3>
+                                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Masuk</strong></h3>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -57,8 +56,8 @@ export default class Example extends React.Component {
                                     <label data-error="wrong" data-success="right" for="Form-email1"></label>
                                 </div>
 
-                                <div class="md-form ">
-                                    <label>Password :</label>
+                                <div class="md-form">
+                                    <label>Password</label>
                                     <input type="password" id="Form-pass1" placeholder="Your password" class="form-control validate"></input>
                                     <label data-error="wrong" data-success="right" for="Form-pass1"></label>
                                     <p class="font-small blue-text d-flex justify-content-end">Lupa <a href="#" class="blue-text ml-1">
@@ -66,7 +65,16 @@ export default class Example extends React.Component {
                                 </div>
 
                                 <div class="text-center mb-3">
-                                    <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1a" onClick={this.notif}>Masuk</button>
+                                    <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1a"
+                                        onClick={
+                                            () => {
+                                                Swal.fire({
+                                                    title: "Berhasil Login",
+                                                    text: "Selamat berbelanja",
+                                                    type: "success",
+                                                })
+                                            }
+                                        }>Masuk</button>
                                 </div>
                                 <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
                     with:</p>

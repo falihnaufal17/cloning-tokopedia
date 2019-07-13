@@ -9,7 +9,7 @@ import { Input } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import FooterBar from '../component/footernew';
 
-let sutotal = 0, qty = 0, total = 0
+let sutotal = 0, qty = 1, price = 0, totQty = 0, total = 0
 let id = 0;
 
 export default class CartList extends Component {
@@ -20,11 +20,15 @@ export default class CartList extends Component {
         this.state = {
             data: dataCart,
             qty: qty,
-            subTotal: 0,
+            subTotal: sutotal,
+            total: total,
+            price: price,
+            totQty: totQty
         }
 
         this.add = this.add.bind(this)
         this.substract = this.substract.bind(this)
+        this.totalQty = this.totalQty.bind(this)
     }
 
     add() {
@@ -37,6 +41,46 @@ export default class CartList extends Component {
         this.setState({
             qty: this.state.qty - 1
         })
+    }
+
+    removeAll() {
+        this.setState({
+            data: this.state.data.length = [],
+            total: this.state.total = 0,
+            sutotal: this.state.subTotal = 0,
+            qty: this.state.qty = 0
+        })
+    }
+
+    removeCart(key) {
+        let d = this.state.data.splice(key, 1)
+        let reduceTotal = this.state.data.reduce((sum, val) => {
+            let sumtotal = sum - val.sub_total
+            return sumtotal
+        }, 0)
+        this.setState({
+            total: this.state.total = 0,
+            sutotal: reduceTotal,
+            qty: this.state.qty = 0
+        })
+        return d
+    }
+
+    totalQty() {
+
+        return this.state.data.reduce((sum, val) => {
+            let sumqtys = sum + val.qty
+
+            return sumqtys
+        }, 0)
+    }
+
+    totalHarga() {
+        return this.state.data.reduce((sum, val) => {
+            let sumtotal = sum + val.sub_total
+
+            return sumtotal
+        }, 0)
     }
 
     render() {
@@ -64,6 +108,7 @@ export default class CartList extends Component {
             rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
             return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
         }
+
         console.log(this.state.qty)
         return (
             <div>
@@ -82,13 +127,13 @@ export default class CartList extends Component {
                                         float: 'right', fontWeight: 700,
                                         color: 'rgba(49,53,59,.44)',
                                         cursor: 'pointer'
-                                    }} onClick={() => { this.setState({ data: this.state.data = [] }) }}>Hapus</p>
+                                    }} onClick={() => { this.removeAll() }}>Hapus</p>
                                     <hr style={{ marginTop: '30px', border: '2px solid rgba(0,0,0,0.1)' }} />
                                     {this.state.data.map((item, key) => {
-                                        qty = item.qty
-                                        sutotal = item.price * this.state.qty
-                                        total = sutotal
+                                        sutotal = item.price * item.qty
+                                        this.state.total = sutotal
                                         id = item.id_cart
+
                                         return (
                                             <div class="card" style={{ width: "100%", height: "auto" }}>
                                                 <label class="checkbox">
@@ -122,8 +167,7 @@ export default class CartList extends Component {
                                                                 <div style={{
                                                                     marginRight: "25px"
                                                                 }} onClick={() => {
-                                                                    let d = this.state.data.splice(key, 1)
-                                                                    return d
+                                                                    this.removeCart(key)
                                                                 }}>
                                                                     <img src={"https://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-trash.png"} style={{ width: "25px", height: "25px" }} />
                                                                 </div>
@@ -133,10 +177,10 @@ export default class CartList extends Component {
                                                                     class="btn btn-sm"
                                                                     style={{ backgroundColor: 'transparent', color: 'black' }}
                                                                     disabled={this.state.qty < 2}
-                                                                    onClick={this.substract}>
+                                                                    onClick={() => { this.substract() }}>
                                                                     <img src={"http://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-min-active.png"} style={{ width: "25px", height: "25px" }} />
                                                                 </button>
-                                                                <input type="text" class="text-center" value={this.state.qty}
+                                                                <input type="text" class="text-center" value={item.qty}
                                                                     style={{
                                                                         borderColor: 'transparent',
                                                                         borderBottomWidth: 2,
@@ -146,7 +190,7 @@ export default class CartList extends Component {
                                                                 <button
                                                                     class="btn btn-sm"
                                                                     style={{ backgroundColor: 'transparent', color: 'black' }}
-                                                                    onClick={this.add}>
+                                                                    onClick={() => { this.add() }}>
                                                                     <img src={"http://ecs7.tokopedia.net/img/cart-checkout/revamp-unify-1903/icon-plus-active.png"} style={{ width: "25px", height: "25px" }} />
                                                                 </button>
                                                             </div>
@@ -166,9 +210,9 @@ export default class CartList extends Component {
                                 <div class="card-body">
                                     <h6 class="card-title">Ringkasan Belanja</h6>
                                     <hr></hr>
-                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.{Rupiah(total)}</span></p>
+                                    <p class="card-text">Total Harga <span class="float-right font-weight-bold">Rp.{Rupiah(this.totalHarga())}</span></p>
                                     <hr></hr>
-                                    <Link to={`/transaction/${id}`}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.state.qty})</button></Link>
+                                    <Link to={`/transaction/${id}`}><button class="btn font-weight-bold mb-3" style={{ width: "100%", backgroundColor: '#ff5722', color: "white" }}>Beli ({this.totalQty()})</button></Link>
                                     <Link to={'/'}>
                                         <div class="card shadow-sm m-auto" style={{ height: "20%", width: "100%", borderRadius: "10px" }}>
                                             <div class="card-body p-3">

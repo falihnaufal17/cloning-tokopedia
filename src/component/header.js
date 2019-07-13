@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../data/kategori.js'
+import dataCart from '../data/cart'
 
 import '../css/navbar.css';
 import '../css/index.css'
@@ -13,9 +14,15 @@ export default class Example extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      datas: data
+      datas: data,
+      dataCart: dataCart
     };
   }
+
+  sumCart() {
+    return this.state.dataCart.length
+  }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -36,7 +43,7 @@ export default class Example extends React.Component {
             </ul>
           </section>
 
-          <nav class="navbar navbar-expand-sm" style={{ verticalAlign: 'baseline', justifyContent: 'center' }} >
+          <nav class="navbar navbar-expand-sm" style={{ justifyContent: 'center' }} >
 
 
             <Link to={`/`}>
@@ -65,7 +72,7 @@ export default class Example extends React.Component {
                   <div class="float-right">
                   </div>
                   <Link to={'/cartList'}>
-                    <i style={{ marginTop: '12px', color: '#AAA' }} class="fas fa-shopping-cart"><span class="badge badge-danger">4</span></i>
+                    <i style={{ marginTop: '12px', color: '#AAA' }} class="fas fa-shopping-cart"><span class="badge badge-danger">{this.sumCart()}</span></i>
                   </Link>
                   <div style={{ marginLeft: '40px', borderRight: '1px solid  rgb(185, 185, 185)', marginTop: '10px', height: '20px' }}></div>
                   <div class="float-right">
