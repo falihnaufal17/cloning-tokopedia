@@ -134,7 +134,7 @@ export default class DetailProduct extends Component {
                             </div>
                             <div class="col-lg-6">
                                 <h3 class=" font-weight-bolder">{dataById.product_name}</h3>
-                                <span  class="badge badge-success">{dataById.category_name}</span><br></br>
+                                <span class="badge badge-success">{dataById.category_name}</span><br></br>
                                 <div class="mt-2">
                                     <span>99.21%  Transaksi Sukses Dari  126  Transaksi </span>
                                     <button
@@ -250,7 +250,7 @@ export default class DetailProduct extends Component {
                     <div style={{ width: "920px", height: "800px", marginTop: '20px' }}>
                         <Ulasan barang={dataById.product_name} desc={dataById.desc} />
                     </div>
-                    <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={this.rupiah(subTotal)} click={this.addToCart.bind(this)} />
+                    <Kaki kota={dataById.location} nama={dataById.seller_name} gambar={dataById.seller_foto} subTotal={this.rupiah(subTotal)} click={this.addToCart.bind(this)} id_product={getId} />
                     <Modal gambar={dataById.image} productName={dataById.product_name} />
 
                 </div>
