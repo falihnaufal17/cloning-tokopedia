@@ -39,3 +39,5 @@ this website cloning from https://www.tokopedia.com
 1. [Abdillah](https://github.com/abdillahtop)
 2. [Falih](https://github.com/falihnaufal17)
 3. [Khadam](https://github.com/kampretosjr)
+
+Check Trello [Clone Tokopedia](https://trello.com/b/mV2ugtoJ/tokopedia-clone)
