@@ -93,13 +93,17 @@ export default class Home extends Component {
               
               
             </section>
-            <section id="dunkles" class="tab-panel" style={{ marginLeft: '13px' }}>
+            <section id="dunkles" class="tab-panel" >
             
               <h2 style={{ marginTop: '-20px' }}> Diskusi Produk</h2>
-                <div class="row border">
-                <i class="far fa-question-circle">Ada pertanyaan ? Diskusikan dengan penjual atau pengguna lain</i>         
-                         <p></p>
-                  <button style={{marginLeft:"30%"}} type="button" class="btn btn-outline-success">Tulis Pertanyaan</button>   
+                <div >
+                <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                  <div class="col-md-6"><h1></h1><i class="far fa-question-circle"></i>  LOE MAU NANYA ? SOK ATUH NANYA  =====>.</div>
+                      <div class="col-md-6">
+                      <button style={{ marginLeft: '322px' }} type="button" class="btn btn-outline-success">Tulis Pertanyaan</button>  
+                    </div>
+                </nav>
+              
                 </div>
             </section>
           </div>

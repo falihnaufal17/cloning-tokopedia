@@ -1,5 +1,6 @@
-import React from 'react';
-import dummy from '../data/produk';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import dummy from '../data/produk'
 
 import '../css/navbar.css';
 
@@ -20,8 +21,7 @@ export default class Example extends React.Component {
   }
 
   render() {
-    // let getId = Number(this.props.match.params.id_product)
-    //     let dataById = dummy.find((item => item.id_produk === getId))
+    // let dataById = dummy.find((item => item.id_produk === getId))
     return (
       <div>
 
@@ -67,15 +67,16 @@ export default class Example extends React.Component {
               <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal" style={{ marginRight: 20 }}>
                 beli
                 </button>
-
-              <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
-                tambah ke keranjang
+              <Link to={`/detailProduct/${this.props.id_product}`}>
+                <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+                  tambah ke keranjang
                 </button>
+              </Link>
             </form>
           </div>
-        </nav>
+        </nav >
 
-      </div>
+      </div >
     );
   }
 }
