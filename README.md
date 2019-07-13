@@ -20,3 +20,9 @@ this website cloning from https://www.tokopedia.com
    $ npm start
    ```
 4. Or check from our netlify https://clone-tokopedia.netlify.com/
+
+### Contributors
+
+1. Abdillah
+2. Falih
+3. Khadam
