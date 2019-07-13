@@ -24,7 +24,7 @@ this website cloning from https://www.tokopedia.com
 ======================== ScreenShoot ==============================
 https://github.com/falihnaufal17/cloning-tokopedia/tree/master/Screenshoot
 
-![alt text](https://github.com/falihnaufal17/cloning-tokopedia/tree/master/Screenshoot/Home.JPG "Ini Home")
+![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/Home.JPG)
 
 ### Contributors
 
