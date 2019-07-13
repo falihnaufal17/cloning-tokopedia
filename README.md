@@ -21,10 +21,11 @@ this website cloning from https://www.tokopedia.com
    ```
 4. Or check from our netlify https://clone-tokopedia.netlify.com/
 
-======================== ScreenShoot ==============================
-https://github.com/falihnaufal17/cloning-tokopedia/tree/master/Screenshoot
-
+======================== ScreenShoot Website ==============================
 ![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/Home.JPG)
+![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/detail.JPG)
+![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/cardlist.JPG)
+![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/transaksi.JPG)
 
 ### Contributors
 
