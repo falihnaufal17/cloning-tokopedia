@@ -21,6 +21,10 @@ this website cloning from https://www.tokopedia.com
    ```
 4. Or check from our netlify https://clone-tokopedia.netlify.com/
 
+======================== ScreenShoot ==============================
+https://github.com/falihnaufal17/cloning-tokopedia/tree/master/Screenshoot
+![alt text](Screenshoot/Home.jpg "Ini Home")
+
 ### Contributors
 
 1. Abdillah
