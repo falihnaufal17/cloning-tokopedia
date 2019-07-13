@@ -20,6 +20,10 @@ export default class Home extends Component {
             data: Dummy,
         }
     }
+
+    restart() {
+        window.scrollTo(0, 0)
+    }
     render() {
         function text(text) {
             if (text.length > 36) {
@@ -57,7 +61,7 @@ export default class Home extends Component {
                                     this.state.data.map((product, key) => {
                                         return (
                                             <Card className="card" style={{ marginTop: "33px" }}>
-                                                <Link to={`/detailProduct/${product.id_produk}`} key={key} style={{ textDecoration: 'none' }}>
+                                                <Link to={`/detailProduct/${product.id_produk}`} key={key} style={{ textDecoration: 'none' }} onClick={this.restart}>
                                                     <CardImg className="ImgCard" top width="999%" src={product.image} alt="Card image cap" />
                                                     <div className="bodyCard">
                                                         <CardSubtitle className="title">{text(product.product_name)}</CardSubtitle>

@@ -18,6 +18,9 @@ export default class Example extends React.Component {
       dataCart: dataCart
     };
   }
+  restart() {
+    window.scrollTo(0, 0)
+  }
 
   sumCart() {
     return this.state.dataCart.length
@@ -33,7 +36,7 @@ export default class Example extends React.Component {
     return (
       <div style={{ marginBottom: "-70px" }}>
         <div class="fixed-top" style={{ backgroundColor: 'white' }}>
-          <section style={{ width: '100%' }}>
+          <div style={{ width: '100%', justifyContent: 'center' }}>
             <a href="https://www.tokopedia.com/mobile-apps/"><p className="headerTopLeft">Download Tokopedia App</p></a>
             <ul className="headerTopRight">
               <li>Mitra Tokopedia</li>
@@ -41,7 +44,7 @@ export default class Example extends React.Component {
               <li>Promo</li>
               <li>Pusat bantuan</li>
             </ul>
-          </section>
+          </div>
 
           <nav class="navbar navbar-expand-sm" style={{ justifyContent: 'center' }} >
 
@@ -71,7 +74,7 @@ export default class Example extends React.Component {
                 <div class="input-group-prepend">
                   <div class="float-right">
                   </div>
-                  <Link to={'/cartList'}>
+                  <Link to={'/cartList'} onClick={this.restart}>
                     <i style={{ marginTop: '12px', color: '#AAA' }} class="fas fa-shopping-cart"><span class="badge badge-danger">{this.sumCart()}</span></i>
                   </Link>
                   <div style={{ marginLeft: '40px', borderRight: '1px solid  rgb(185, 185, 185)', marginTop: '10px', height: '20px' }}></div>
