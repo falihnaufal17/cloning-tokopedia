@@ -21,14 +21,21 @@ this website cloning from https://www.tokopedia.com
    ```
 4. Or check from our netlify https://clone-tokopedia.netlify.com/
 
-======================== ScreenShoot Website ==============================
+============================= ScreenShoot Website ==============================
+## Home
 ![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/Home.JPG)
+
+## Detail Product
 ![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/detail.JPG)
+
+## Cardlist
 ![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/cardlist.JPG)
+
+## Transaction
 ![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/transaksi.JPG)
 
 ### Contributors
 
-1. Abdillah
-2. Falih
-3. Khadam
+1. [Abdillah](https://github.com/abdillahtop)
+2. [Falih](https://github.com/falihnaufal17)
+3. [Khadam](https://github.com/kampretosjr)
