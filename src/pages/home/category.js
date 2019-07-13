@@ -41,75 +41,75 @@ export default class category extends Component {
                             </Col>
                         </Row>
                     </Col>
-                    <Col xs="6" style={{border:`7px`}}>
+                    <Col xs="6" style={{ border: `7px` }}>
                         <h5 style={{ float: 'left' }}>Top Up & Tagihan</h5>
                         <h6 style={{ float: 'right', color: 'green' }}>Lihat Semua</h6>
                         <Col style={{ width: '100%', border: '1px solid rgb(204, 204, 204, 0.5)', height: '130px', borderRadius: '5px', marginTop: '40px' }}>
-                        <Tabs defaultTab="one" onChange={(tabId) => { console.log(tabId) }} > 
-                            <TabList>
-                                <Tab tabFor="one">Pulsa</Tab>
-                                <Tab tabFor="two">Paket Data</Tab>
-                                <Tab tabFor="three">Listrik</Tab>
-                                <Tab tabFor="fourth">Flight</Tab>
-                            </TabList>
-                            <TabPanel tabId="one">
-                            <Row>
-                                <p class=" col-md-4">Nomer HP</p>
-                                <p class=" col-md-6">Jumlah pulsa</p>
-                            </Row>
-                            <form style={{ marginTop: '-20px' ,justifyContent:"left"}} class="form-inline" action="/action_page.php">
-                                <input type="text" class="form-control mr-sm-2 col-md-4" />
-                                <select class="form-control mr-sm-2 col-md-5" placeholder="jumlah pulsa" id="sel1">
-                                    <option>10.000</option>
-                                    <option>20.000</option>
-                                    <option>30.000</option>
-                                    <option>40.000</option>
-                                </select>
-                                <button class="btn btn-success col-md-2" type="submit">Search</button>
-                            </form>
-                            </TabPanel>
-                            <TabPanel tabId="two">
-                            <Row>
-                                <p class=" col-md-4">Nomer HP</p>
-                                <p class=" col-md-6">Jumlah Kuota   </p>
-                            </Row>
-                            <form style={{ marginTop: '-20px' ,justifyContent:"left"}} class="form-inline" action="/action_page.php">
-                                <input type="text" class="form-control mr-sm-2 col-md-4" />
-                                <select class="form-control mr-sm-2 col-md-5" placeholder="jumlah pulsa" id="sel1">
-                                    <option>1 GB</option>
-                                    <option>2 GB</option>
-                                    <option>4 GB</option>
-                                    <option>8 GB</option>
-                                </select>
-                                <button class="btn btn-success col-md-2" type="submit">Search</button>
-                            </form>
-                            </TabPanel>
-                            <TabPanel tabId="three">
-                            <Row>
-                                <p class=" col-md-3">ID Listrik</p>
-                                <p class=" col-md-3">Jenis KwH</p>
-                                <p class=" col-md-3">Nominal</p>
-                            </Row>
-                            <form style={{ marginTop: '-20px' ,justifyContent:"center"}} class="form-inline" action="/action_page.php">
-                                <input type="text" class="form-control mr-sm-2 col-md-3" />
-                                <select class="form-control mr-sm-2 col-md-3" placeholder="jumlah pulsa" id="sel1">
-                                    <option>3123</option>
-                                    <option>22</option>
-                                    <option>88</option>
-                                    <option>642</option>
-                                </select>
-                                <select class="form-control mr-sm-2 col-md-3" placeholder="jumlah pulsa" id="sel1">
-                                    <option>10.000</option>
-                                    <option>20.000</option>
-                                    <option>30.000</option>
-                                    <option>40.000</option>
-                                </select>
-                                <button class="btn btn-success col-md-2" type="submit">Search</button>
-                            </form>
-                            </TabPanel>
-                            <TabPanel tabId="fourth">
+                            <Tabs defaultTab="one" onChange={(tabId) => { console.log(tabId) }} >
+                                <TabList>
+                                    <Tab tabFor="one">Pulsa</Tab>
+                                    <Tab tabFor="two">Paket Data</Tab>
+                                    <Tab tabFor="three">Listrik</Tab>
+                                    <Tab tabFor="fourth">Flight</Tab>
+                                </TabList>
+                                <TabPanel tabId="one">
+                                    <Row>
+                                        <p class=" col-md-4">Nomer HP</p>
+                                        <p class=" col-md-6">Jumlah pulsa</p>
+                                    </Row>
+                                    <form style={{ marginTop: '-20px', justifyContent: "left" }} class="form-inline" action="/action_page.php">
+                                        <input type="text" class="form-control mr-sm-2 col-md-4" />
+                                        <select class="form-control mr-sm-2 col-md-5" placeholder="jumlah pulsa" id="sel1">
+                                            <option>10.000</option>
+                                            <option>20.000</option>
+                                            <option>30.000</option>
+                                            <option>40.000</option>
+                                        </select>
+                                        <button class="btn btn-success col-md-2" type="submit">Search</button>
+                                    </form>
+                                </TabPanel>
+                                <TabPanel tabId="two">
+                                    <Row>
+                                        <p class=" col-md-4">Nomer HP</p>
+                                        <p class=" col-md-6">Jumlah Kuota   </p>
+                                    </Row>
+                                    <form style={{ marginTop: '-20px', justifyContent: "left" }} class="form-inline" action="/action_page.php">
+                                        <input type="text" class="form-control mr-sm-2 col-md-4" />
+                                        <select class="form-control mr-sm-2 col-md-5" placeholder="jumlah pulsa" id="sel1">
+                                            <option>1 GB</option>
+                                            <option>2 GB</option>
+                                            <option>4 GB</option>
+                                            <option>8 GB</option>
+                                        </select>
+                                        <button class="btn btn-success col-md-2" type="submit">Search</button>
+                                    </form>
+                                </TabPanel>
+                                <TabPanel tabId="three">
+                                    <Row>
+                                        <p class=" col-md-3">ID Listrik</p>
+                                        <p class=" col-md-3">Jenis KwH</p>
+                                        <p class=" col-md-3">Nominal</p>
+                                    </Row>
+                                    <form style={{ marginTop: '-20px', justifyContent: "center" }} class="form-inline" action="/action_page.php">
+                                        <input type="text" class="form-control mr-sm-2 col-md-3" />
+                                        <select class="form-control mr-sm-2 col-md-3" placeholder="jumlah pulsa" id="sel1">
+                                            <option>3123</option>
+                                            <option>22</option>
+                                            <option>88</option>
+                                            <option>642</option>
+                                        </select>
+                                        <select class="form-control mr-sm-2 col-md-3" placeholder="jumlah pulsa" id="sel1">
+                                            <option>10.000</option>
+                                            <option>20.000</option>
+                                            <option>30.000</option>
+                                            <option>40.000</option>
+                                        </select>
+                                        <button class="btn btn-success col-md-2" type="submit">Search</button>
+                                    </form>
+                                </TabPanel>
+                                <TabPanel tabId="fourth">
                                     <h1><i class="fas fa-plane"></i><i class="far fa-building"></i><i class="far fa-building"></i></h1>
-                            </TabPanel>
+                                </TabPanel>
                             </Tabs>
                         </Col>
                     </Col>
