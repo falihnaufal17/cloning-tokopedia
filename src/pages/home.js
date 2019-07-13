@@ -25,6 +25,10 @@ export default class Home extends Component {
         }
     }
 
+    restart() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         function text(text) {
             if (text.length > 34) {
@@ -75,7 +79,7 @@ export default class Home extends Component {
                                             return (
 
                                                 <Card className="card">
-                                                    <Link to={`/detailProduct/${product.id_produk}`} key={key} style={{ textDecoration: 'none' }}>
+                                                    <Link to={`/detailProduct/${product.id_produk}`} key={key} style={{ textDecoration: 'none' }} onClick={this.restart}>
                                                         <CardImg className="ImgCard" top width="100%" src={product.image} alt="Card image cap" />
                                                         <div className="bodyCard">
                                                             <CardSubtitle className="title">{text(product.product_name)}</CardSubtitle>

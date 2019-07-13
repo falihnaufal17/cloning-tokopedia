@@ -5,10 +5,12 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
+    "react-alice-carousel": "^1.15.2",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.0",
+    "sweetalert2": "^8.13.4",
     "sweetalert2-react": "^0.8.2"
   },
   "scripts": {

@@ -16,7 +16,7 @@
     width: 100%;
     margin-top: 2em;
     border-radius: 15px;
-    box-shadow: -0.5px 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -0.5px 1px 5px rgba(0, 0, 0, 0.2);
     padding: 1.5em;
 
 }
@@ -33,7 +33,7 @@
     width: 120px;
     height: 120px;
     /* box-shadow: -0.5px 1px 3px rgba(0, 0, 0, 0.125); */
-    border: 0.5px solid rgb(204, 204, 204, 0.5);
+    border: 1px solid rgb(204, 204, 204, 0.5);
     border-radius: 5px;
     text-align: center;
 }
@@ -63,7 +63,7 @@ ul li {
 
 .categotyBot {
     padding: 5px;
-    border: 0.5px solid rgb(204, 204, 204, 0.5);
+    border: 1px solid rgb(204, 204, 204, 0.5);
     border-radius: 25px;
     margin-right: 10px;
     height: 40px;
@@ -78,7 +78,7 @@ ul li {
 }
 
 .ImgCard:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .productStyle {
