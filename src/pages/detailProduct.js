@@ -53,14 +53,24 @@ export default class DetailProduct extends Component {
     };
 
     addToCart() {
-        this.state.cart.push({
-            'product_name': nama_produk,
-            'price': harga,
-            'qty': this.state.qty,
-            'sub_total': jumlah_total,
-            'image': gambar,
-            'location': lokasi
-        })
+        let produkcart = this.state.cart.find(item => item.product_name === nama_produk)
+        let qty = this.state.cart.find(item => item.qty)
+        if (produkcart) {
+            alert('data sudah ada')
+            this.setState({
+                qty: qty + this.state.qty
+            })
+        } else {
+            this.state.cart.push({
+                'product_name': nama_produk,
+                'price': harga,
+                'qty': this.state.qty,
+                'sub_total': jumlah_total,
+                'image': gambar,
+                'location': lokasi
+            })
+        }
+
         console.log("Add to cart success", this.state.cart)
     }
     rupiah(angka) {

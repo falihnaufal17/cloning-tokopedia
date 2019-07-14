@@ -1,8 +1,4 @@
-const data = []
-let subTotal = data.map((item) => {
-    return item.price * item.qty
-})
-data.push(
+const data = [
     {
         "id_cart": 1,
         "product_name": "SENTER AJAIB PEMBESAR APA SAJA",
@@ -17,7 +13,7 @@ data.push(
         "kota": "Deutch",
         "negara": "Germany",
     },
-)
+]
 
 
 module.exports = data
