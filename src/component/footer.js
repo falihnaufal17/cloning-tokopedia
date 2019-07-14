@@ -73,15 +73,15 @@ export default class Example extends React.Component {
                 <Link to={`/cartList`} onClick={this.props.click} style={{ color: '#000' }}>beli</Link>
               </button>
 
-
-              <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
-                tambah ke keranjang
+              <Link to={`/detailProduct/${this.props.id_product}`}>
+                <button type="button" onClick={this.props.click} class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+                  tambah ke keranjang
                 </button>
+              </Link>
             </form>
           </div>
         </nav >
-
-      </div >
+      </div>
     );
   }
 }
