@@ -1,7 +1,7 @@
 const data = [
     {
         "id_cart": 1,
-        "product_name": "SENTER AJAIB PEMBESAR APA SAJA",
+        "product_name": "SENTER AJAIB PEMBESAR APA SAJA - ASLI DARI PERUT DORAEMON",
         "price": 1200100,
         "qty": 2,
         "sub_total": 2400200,

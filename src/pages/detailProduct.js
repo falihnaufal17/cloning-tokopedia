@@ -54,12 +54,8 @@ export default class DetailProduct extends Component {
 
     addToCart() {
         let produkcart = this.state.cart.find(item => item.product_name === nama_produk)
-        let qty = this.state.cart.find(item => item.qty)
         if (produkcart) {
             alert('data sudah ada')
-            this.setState({
-                qty: qty + this.state.qty
-            })
         } else {
             this.state.cart.push({
                 'product_name': nama_produk,
