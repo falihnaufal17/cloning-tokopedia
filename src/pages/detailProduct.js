@@ -54,8 +54,10 @@ export default class DetailProduct extends Component {
 
     addToCart() {
         let produkcart = this.state.cart.find(item => item.product_name === nama_produk)
+
         if (produkcart) {
             alert('data sudah ada')
+            console.log("Data sudah ada!", this.state.cart)
         } else {
             this.state.cart.push({
                 'product_name': nama_produk,
@@ -65,9 +67,8 @@ export default class DetailProduct extends Component {
                 'image': gambar,
                 'location': lokasi
             })
+            console.log("Add to cart success", this.state.cart)
         }
-
-        console.log("Add to cart success", this.state.cart)
     }
     rupiah(angka) {
         var rupiah = '';
