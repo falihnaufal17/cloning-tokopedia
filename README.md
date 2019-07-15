@@ -23,6 +23,7 @@ For its role in developing online business in Indonesia, Tokopedia won the 2014 
 
 In December 2018, Tokopedia was chosen as the best choice for the community on Google Play.
 
+
 ## Features
 * Users can see all product and product detail
 * Users can buy and move product to Keranjang and can't add product same 
@@ -45,7 +46,6 @@ In December 2018, Tokopedia was chosen as the best choice for the community on G
       cd cloning-tokopedia 
       npm install
       npm install --save react-web-tabs
-
    ```
 3. Run Tokopedia
    ```
@@ -53,17 +53,12 @@ In December 2018, Tokopedia was chosen as the best choice for the community on G
    ```
 
 ## Screenshoot
-### Home
-![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/Home.JPG)
-
-### Detail Product
-![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/detail.JPG)
-
-### Cardlist
-![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/cardlist.JPG)
-
-### Transaction
-![alt text](https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/transaksi.JPG)
+<div align="center">
+    <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/Home.JPG">    
+    <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/detail.JPG">
+    <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/cardlist.JPG">
+  <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/transaksi.JPG">
+</div>
 
 ## Website 
 <a href="https://clone-tokopedia.netlify.com/">
@@ -73,9 +68,6 @@ In December 2018, Tokopedia was chosen as the best choice for the community on G
 ## Trello
 You can see the Trello for this project [`here`](https://trello.com/b/mV2ugtoJ/tokopedia-clone)
 
-### Contributors
-
-3. [Khadam](https://github.com/kampretosjr)
 
 ## Contributors
 <center>
@@ -84,7 +76,7 @@ You can see the Trello for this project [`here`](https://trello.com/b/mV2ugtoJ/t
       <td align="center">
         <a href="https://github.com/abdillahtop">
           <img width="100" src="https://avatars3.githubusercontent.com/u/50162090?s=460&v=4" alt="Abdillah Dzulfikar Mustanir"><br/>
-          <sub><b>Abdillah Dzulfikar Mustanir</b></sub>
+          <sub><b>Abdillah Dzulfikar </b></sub>
         </a>
       </td>
       <td align="center">
