@@ -1,10 +1,8 @@
 import React from 'react';
 import data from '../data/kategori.js'
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
 import '../css/navbar.css';
-// import {Link} from 'react-router-dom';
 
 export default class Example extends React.Component {
   constructor(props) {

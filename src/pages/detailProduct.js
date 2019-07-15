@@ -8,7 +8,7 @@ import Ndas from '../component/header'
 import Ulasan from '../component/ulasan'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import dataCart from '../data/cart'
-import { Container, Row, Col, Input, Button } from 'reactstrap';
+import { Input } from 'reactstrap';
 
 var jml = 0, harga = 0, jumlah_total = 0
 var nama_produk, gambar, lokasi

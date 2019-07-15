@@ -3,7 +3,6 @@ import data from '../data/kategori.js'
 import Swal from 'sweetalert2';
 
 import '../css/modal.css';
-// import {Link} from 'react-router-dom';
 
 export default class Example extends React.Component {
     constructor(props) {
