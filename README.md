@@ -1,11 +1,7 @@
 ## :octocat: Cloning Tokopedia
 ---
-<p align="center">
   <img width="150" src="https://seeklogo.com/images/T/tokopedia-logo-5340B636F6-seeklogo.com.png"/>
-</p>
-<p align="center">
   Built with React Js.
-</p>
 
 ## Table of Contents
 
@@ -62,7 +58,7 @@ In December 2018, Tokopedia was chosen as the best choice for the community on G
 
 ## Website 
 <a href="https://clone-tokopedia.netlify.com/">
-  <img src="https://img.shields.io/badge/Download%20on%20the-Google%20Drive-blue.svg?style=popout&logo=google-drive"/>
+  <img src="https://img.shields.io/badge/Project-Website-blue.svg"/>
 </a>
 
 ## Trello
