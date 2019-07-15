@@ -1,7 +1,9 @@
-<p align="center"> <h1>:octocat: Cloning Tokopedia :octocat:</h1> <p>
+<h1 align="center">:octocat: Cloning Tokopedia :octocat:</h1>
 ---
   <p align="center">
   <img width="150" src="https://seeklogo.com/images/T/tokopedia-logo-5340B636F6-seeklogo.com.png"/>
+  </p>
+  <p align="center">
   Built with React Js.
    </p>
 
