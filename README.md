@@ -54,10 +54,10 @@ In December 2018, Tokopedia was chosen as the best choice for the community on G
 
 ## Screenshoot
 <div align="center">
-    <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/Home.JPG">    
-    <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/detail.JPG">
-    <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/cardlist.JPG">
-  <img width="250" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/transaksi.JPG">
+    <img width="600" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/Home.JPG">    
+    <img width="600" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/detail.JPG">
+    <img width="600" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/cardlist.JPG">
+  <img width="600" src="https://github.com/falihnaufal17/cloning-tokopedia/blob/master/Screenshoot/transaksi.JPG">
 </div>
 
 ## Website 
