@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import {
-  Container, Row, Col, Card, CardImg, CardText, CardSubtitle
-} from 'reactstrap';
 import '../App.css';
 
 class FooterBar extends Component {

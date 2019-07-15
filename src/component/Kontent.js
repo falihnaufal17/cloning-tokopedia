@@ -1,8 +1,8 @@
 //libray
 import React, { Component } from 'react'
 import {
-    Container, Row, Col, Card, CardGroup, Button, CardImg, CardTitle, CardText, CardDeck,
-    CardSubtitle, CardBody
+    Container, Row, Col, Card, Button, CardImg, CardText,
+    CardSubtitle
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
